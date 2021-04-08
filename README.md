@@ -1,10 +1,9 @@
 # WorshipDrumScores
 an aggregation of drum scores I made / collected / stole
 
-
-c = drum cover video only
-i = video of sheet only
-j = jpg pics not made into pdf yet
+c = drum cover video only  
+i = video of sheet only  
+j = jpg pics not made into pdf yet  
 src: source files, no longer needed. 
 
 
