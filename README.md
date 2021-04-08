@@ -8,14 +8,14 @@ j = jpg pics not made into pdf yet
 src: source files, no longer needed. 
 
 
-##Useful links:
+## Useful links:
 	https://bigjpg.com/
 	https://drumbit.app/
 	http://www.tabscroller.com/
 
 
-##guides for making drums scores your self
-####make pdf from praise drummer videos:
+## guides for making drums scores your self
+### make pdf from praise drummer videos:
 	- download youtube video
 	- import into Premiere, add video effect - contrast - 7.0
 	- export frames
