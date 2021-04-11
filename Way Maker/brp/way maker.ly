@@ -1,6 +1,7 @@
 \version "2.18.2"
 \paper {
-  #(set-paper-size "a4")
+  #(set-paper-size "letter")
+  indent = 0
   ragged-last-bottom = ##f
 }
 \header {
@@ -27,7 +28,7 @@
             "🥝"  }}
 
 \layout {
-  #(layout-set-staff-size 24)
+  #(layout-set-staff-size 28)
 }
 
 #(define (rest-score r)
@@ -99,7 +100,7 @@
     swing_eight = \mark \markup {
       \line \general-align #Y #DOWN { \score {
       \new Staff \with {
-        fontSize = #-2
+        fontSize = #22
         \override StaffSymbol #'line-count = #0
         \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
       }
@@ -118,7 +119,7 @@
         \remove "Time_signature_engraver" }
       }} " ="
       \score { \new Staff \with {
-        fontSize = #-2
+        fontSize = #22
         \override StaffSymbol #'line-count = #0
         \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
       }
@@ -145,7 +146,7 @@
     swing_sixteen = \mark \markup {
       \line \general-align #Y #DOWN { \score {
       \new Staff \with {
-        fontSize = #-2
+        fontSize = #22
         \override StaffSymbol #'line-count = #0
         \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
       }
@@ -164,7 +165,7 @@
         \remove "Time_signature_engraver" }
       }} " ="
       \score { \new Staff \with {
-        fontSize = #-2
+        fontSize = #22
         \override StaffSymbol #'line-count = #0
         \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
       }
@@ -191,7 +192,7 @@
     swing_thirtytwo = \mark \markup {
       \line \general-align #Y #DOWN { \score {
       \new Staff \with {
-        fontSize = #-2
+        fontSize = #22
         \override StaffSymbol #'line-count = #0
         \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
       }
@@ -210,7 +211,7 @@
         \remove "Time_signature_engraver" }
       }} " ="
       \score { \new Staff \with {
-        fontSize = #-2
+        fontSize = #22
         \override StaffSymbol #'line-count = #0
         \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
       }
@@ -1408,12 +1409,9 @@ drumPitchNames = #'(   (footpedal . footpedal)
 
     \context {
     \Score
-      proportionalNotationDuration = #(ly:make-moment 1 10)
-        \override Score.SpacingSpanner.strict-note-spacing = ##t
-
+      proportionalNotationDuration = #(ly:make-moment 1/10)
+      \override Score.SpacingSpanner.strict-note-spacing = ##t
       \override SpacingSpanner #'uniform-stretching = ##t
-
-
             
     }
   }

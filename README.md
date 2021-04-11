@@ -1,5 +1,5 @@
 # WorshipDrumScores
-an aggregation of drum scores I made / collected / stole
+an aggregation of drum scores I made / collected / pirated
 
 
 c = drum cover video only
