@@ -90,7 +90,9 @@ with open('musicsrc.txt', 'r', encoding="utf8") as in_file:
     for line in in_file:
         #pass if line is empty
         w=""
-        if "<" in line.strip():
+        if "#" in line.strip():
+            pass
+        elif "<" in line.strip():
             w=line.strip()
         elif (len(line.strip())<=1):
             if lastLineIsSrc:
