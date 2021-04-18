@@ -11,6 +11,9 @@ src: source files, no longer needed.
 	https://bigjpg.com/
 	https://drumbit.app/
 	http://www.tabscroller.com/
+	
+## Awesome links (that are just like this site)
+	http://worshipdrumtranscription.com/
 
 
 ## guides for making drums scores your self
