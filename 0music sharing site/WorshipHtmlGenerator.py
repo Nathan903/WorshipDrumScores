@@ -11,7 +11,7 @@ templatefilename = "bodytemplate.html"
 head_file_name = "head.html"
 name_placeholder ="#name#"
 src_placeholder ="#src#"
-outputfile_name ="worship.html"
+outputfile_name ="index.html"
 
 
 
