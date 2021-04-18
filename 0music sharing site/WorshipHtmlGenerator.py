@@ -25,7 +25,7 @@ f=open(head_file_name , "r")
 head = str(f.read())
 f.close()
 
-outputfile = open(outputfile_name,"w")
+outputfile = open(outputfile_name,"w", encoding="utf-8")
 outputfile.write("")
 outputfile.close()
 
@@ -44,7 +44,7 @@ workingtemplatefile.close()
 """
 
 #make output file
-outputfile = open(outputfile_name,"a+")
+outputfile = open(outputfile_name,"a+",encoding="utf-8")
 
 #https://blog.csdn.net/weixin_44676081/article/details/97620024
 def is_Chinese(word):
