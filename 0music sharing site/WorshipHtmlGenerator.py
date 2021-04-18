@@ -46,6 +46,11 @@ workingtemplatefile.close()
 #make output file
 outputfile = open(outputfile_name,"a+",encoding="utf-8")
 
+#http://stackoverflow.com/a/13752628/6762004
+def strip_emoji(text):
+    RE_EMOJI = re.compile('[\U00010000-\U0010ffff]', flags=re.UNICODE)
+    return RE_EMOJI.sub(r'', text)
+
 #https://blog.csdn.net/weixin_44676081/article/details/97620024
 def is_Chinese(word):
     for ch in word:
@@ -55,17 +60,22 @@ def is_Chinese(word):
 
 #get short title and initial (e.g. ['lzhl', '两只老虎'])
 def getInitial(inputString):
-    if is_Chinese(inputString[0:1]):
+    if is_Chinese(strip_emoji(inputString[0:4])):
         l1 = inputString.split("(")
-        l2 = l1[0].split(" ")
+        l11 = l1[0].split("（")
+        l2 = l11[0].split(" ")
+        i=0
         l = l2[0].translate(str.maketrans('','',string.punctuation))
+        if(len(l2[0])<2 and len(l2[0])<len(l2[1])):
+            l = ("".join(l2[0:2])).translate(str.maketrans('','',string.punctuation))
         l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
-        return (["".join(i[0] for i in pinyin(l, style=Style.FIRST_LETTER, strict=False)), l])
+        return ([strip_emoji("".join(i[0] for i in pinyin(l, style=Style.FIRST_LETTER, strict=False))), l])
     else:
         l1 = inputString.split("(")
-        l = l1[0].translate(str.maketrans('','',string.punctuation))
+        l11 = l1[0].split("（")
+        l = l11[0].translate(str.maketrans('','',string.punctuation))
         l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
-        return ([l.replace(" ","").lower(), l])
+        return ([strip_emoji(l.replace(" ","").lower()), l])
 
 def rp(filename, text_to_search, replacement_text):
     with fileinput.FileInput(filename, inplace=True, backup='.bak') as file:
@@ -80,7 +90,9 @@ with open('musicsrc.txt', 'r', encoding="utf8") as in_file:
     for line in in_file:
         #pass if line is empty
         w=""
-        if (len(line.strip())<=1):
+        if "<" in line.strip():
+            w=line.strip()
+        elif (len(line.strip())<=1):
             if lastLineIsSrc:
                 w=tlist[7]+tlist[8]
             lastLineIsName=False
@@ -105,7 +117,7 @@ with open('musicsrc.txt', 'r', encoding="utf8") as in_file:
 out = out + ww
 
 namelist.sort(key = lambda x: x[0])
-print(namelist)
+#print(namelist)
 
 hd=head+"<header><b>目录（拼音首字母排序）:</b><br>"
 for i in namelist:
