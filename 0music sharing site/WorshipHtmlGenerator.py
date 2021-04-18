@@ -129,7 +129,7 @@ hd=hd+" |</header><br>"
 
 out=hd+out
 out=out+5*"<br>"+"<footer>如音频无法播放代表文件源已阵亡。请到<a href=\"https://github.com/Nathan903/WorshipDrumScores/issues\"style=\"color:red;\">这里</a>提交问题以帮助页面改进</footer>"
-out=out +"<br> last updated" + str(datetime.datetime.now())
+out=out +"<p>last updated " + str(datetime.datetime.now())+"</p>"
 outputfile.write(out+"</html>")
 outputfile.close()
 
