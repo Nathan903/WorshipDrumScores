@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>HTA Test</title>
+    <HTA:APPLICATION>
+</head>
+
+<body>
+<button onclick="ShowFind()">Click me</button>
+</body>
+
+<script language="VBScript">
+    Sub ShowFind()
+        CreateObject("WScript.Shell").SendKeys "^f"
+    End Sub
+</script>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search..">
+</div>
+</html>
