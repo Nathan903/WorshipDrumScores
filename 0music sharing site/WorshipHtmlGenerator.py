@@ -14,8 +14,6 @@ name_placeholder ="#name#"
 src_placeholder ="#src#"
 outputfile_name ="index.html"
 
-
-
 #read body template
 f=open(templatefilename, "r", encoding="utf-8")
 template = str(f.read())
@@ -35,6 +33,7 @@ tlist = template.split("$")
 for i in range(len(tlist)):
     tlist[i]=(tlist[i][1:])
 print(tlist)
+print("\n")
 
 #make working template file
 """
@@ -67,7 +66,7 @@ def getInitial(inputString):
         l2 = l11[0].split(" ")
         i=0
         l = l2[0].translate(str.maketrans('','',string.punctuation))
-        if(len(l2[0])<2 and len(l2[0])<len(l2[1])):
+        if(len(l2)>1 and len(l2[0])<2 and len(l2[0])<len(l2[1])):
             l = ("".join(l2[0:2])).translate(str.maketrans('','',string.punctuation))
         l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
         return ([strip_emoji("".join(i[0] for i in pinyin(l, style=Style.FIRST_LETTER, strict=False))), l])
@@ -89,13 +88,13 @@ with open('weworshipshh src.txt', 'r', encoding="utf-8") as in_file:
     lastLineIsName=False
     lastLineIsSrc=False
     for line in in_file:
-        #pass if line is empty
+        #pass if line is
         w=""
         if "#" in line.strip():
             pass
         elif "<" in line.strip():
             w=line.strip()
-        elif (len(line.strip())<=1):
+        elif (len(line.strip())==0):
             if lastLineIsSrc:
                 w=tlist[7]+tlist[8]
             lastLineIsName=False
