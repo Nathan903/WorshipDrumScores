@@ -14,7 +14,8 @@ print(res1)
 print(toChinese("%E4%BB%80%E4%B9%88%E7%B2%89"))
 """
 
-
+#victim:https://weworshipshh.com/main.php?go=home&key_name=&key_name_len=0
+#page = main.php
 #https://weworshipshh.com//mp3/02_HJ_%E5%9B%9E%E5%AE%B6.mp3
 songlist = []
 lbak = []
@@ -42,7 +43,7 @@ for i in range(len(lbak)):
 print(t)
 """
 
-f = open('src.txt', 'a')
+f = open('worshipshh_src.txt', 'a')
 for a in songlist:
     f.write(a[0]+"\n")
     f.write(toUrl("https://weworshipshh.com/"+a[1][1:]))
