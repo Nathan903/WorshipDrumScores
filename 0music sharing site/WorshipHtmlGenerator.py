@@ -17,16 +17,16 @@ outputfile_name ="index.html"
 
 
 #read body template
-f=open(templatefilename, "r")
+f=open(templatefilename, "r", encoding="unicode_escape") #)
 template = str(f.read())
 f.close()
 
 #read head template
-f=open(head_file_name , "r")
+f=open(head_file_name , "r", encoding="unicode_escape") #)
 head = str(f.read())
 f.close()
 
-outputfile = open(outputfile_name,"w", encoding="utf-8")
+outputfile = open(outputfile_name,"w", encoding="unicode_escape") #"utf-8")
 outputfile.write("")
 outputfile.close()
 
@@ -45,7 +45,7 @@ workingtemplatefile.close()
 """
 
 #make output file
-outputfile = open(outputfile_name,"a+",encoding="utf-8")
+outputfile = open(outputfile_name,"a+",encoding="unicode_escape") #"utf-8")
 
 #http://stackoverflow.com/a/13752628/6762004
 def strip_emoji(text):
@@ -85,7 +85,7 @@ def rp(filename, text_to_search, replacement_text):
 out = ""
 ww=""
 namelist = []
-with open('weworshipshh src.txt', 'r', encoding="utf8") as in_file:
+with open('weworshipshh src.txt', 'r', encoding="unicode_escape") as in_file:
     lastLineIsName=False
     lastLineIsSrc=False
     for line in in_file:
