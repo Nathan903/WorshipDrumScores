@@ -85,7 +85,7 @@ def rp(filename, text_to_search, replacement_text):
 out = ""
 ww=""
 namelist = []
-with open('weworshipshh src.txt', 'r', encoding="utf-8") as in_file:
+with open('musicsrc.txt', 'r', encoding="utf-8") as in_file:
     lastLineIsName=False
     lastLineIsSrc=False
     for line in in_file:
