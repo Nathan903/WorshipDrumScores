@@ -16,14 +16,15 @@ def removeComments(string):
     return regex.sub(_replacer, string)
 
 src = 'encrypted.html'
+#src = 'index.html'
 
 f = open(src,'r',encoding='utf-8')
 s=f.read()
-m=removeComments(s)
+s=removeComments(s)
 o=open('all.html','w',encoding='utf-8')
 
-m = minify_html.minify(m, minify_js=True, minify_css=True)
-o.write(m)
+s = minify_html.minify(s, minify_js=True, minify_css=True)
+o.write(s)
 o.close()
 f.close()
 
