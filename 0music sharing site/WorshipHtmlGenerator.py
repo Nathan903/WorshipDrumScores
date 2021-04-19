@@ -84,7 +84,7 @@ def rp(filename, text_to_search, replacement_text):
 out = ""
 ww=""
 namelist = []
-with open('weworshipshh src.txt', 'r', encoding="utf-8") as in_file:
+with open('musicsrc.txt', 'r', encoding="utf-8") as in_file:
     lastLineIsName=False
     lastLineIsSrc=False
     for line in in_file:
@@ -93,7 +93,7 @@ with open('weworshipshh src.txt', 'r', encoding="utf-8") as in_file:
         if "#" in line.strip():
             pass
         elif "<" in line.strip():
-            w=line.strip()
+            w="<br><hr>"+line.strip()
         elif (len(line.strip())==0):
             if lastLineIsSrc:
                 w=tlist[7]+tlist[8]
@@ -121,12 +121,14 @@ out = out + ww
 namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
+#make head
 hd=head+"<header><b>目录（拼音首字母排序）:</b><br>"
 for i in namelist:
     hd=hd+" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
-hd=hd+" |</header><br>"
+hd=hd+" |</header>"
 
-out=hd+out
+#add heat to body, then add footer
+out=hd+"""<br><a href="all" style="color:red;">完整歌单</a>""" + out
 out=out+15*"<br>"+"<footer>如音频无法播放代表文件源已阵亡。请到<a href=\"https://github.com/Nathan903/WorshipDrumScores/issues\"style=\"color:red;\">这里</a>提交问题以帮助页面改进"
 out=out +"  <br>last updated " + str(datetime.datetime.now())+"</footer>"
 outputfile.write(out+"</html>")
