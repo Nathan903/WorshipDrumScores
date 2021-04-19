@@ -5,6 +5,7 @@ import datetime
 import string
 from pypinyin import Style, pinyin
 import re
+import htmlmin
 import zhon.hanzi 
 #might need updates
 codeclist = ["mp3","m4a", "ogg"]
@@ -84,7 +85,7 @@ def rp(filename, text_to_search, replacement_text):
 out = ""
 ww=""
 namelist = []
-with open('musicsrc.txt', 'r', encoding="utf-8") as in_file:
+with open('weworshipshh src.txt', 'r', encoding="utf-8") as in_file:
     lastLineIsName=False
     lastLineIsSrc=False
     for line in in_file:
@@ -115,7 +116,7 @@ with open('musicsrc.txt', 'r', encoding="utf-8") as in_file:
             lastLineIsSrc=True
         ww=ww+w
     if lastLineIsSrc:
-        ww=ww+tlist[7]+tlist[8]+tlist[8]
+        ww=ww+tlist[7]+tlist[8] +tlist[8]
 out = out + ww
 
 namelist.sort(key = lambda x: x[0])
@@ -131,7 +132,8 @@ hd=hd+" |</header>"
 out=hd+"""<br><a href="all" style="color:red;">完整歌单</a>""" + out
 out=out+15*"<br>"+"<footer>如音频无法播放代表文件源已阵亡。请到<a href=\"https://github.com/Nathan903/WorshipDrumScores/issues\"style=\"color:red;\">这里</a>提交问题以帮助页面改进"
 out=out +"  <br>last updated " + str(datetime.datetime.now())+"</footer>"
-outputfile.write(out+"</html>")
+out=htmlmin.minify(out+"</html>", remove_empty_space=True)
+outputfile.write(out)
 outputfile.close()
 
 
