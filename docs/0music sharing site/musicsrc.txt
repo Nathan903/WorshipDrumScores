@@ -52,7 +52,7 @@ https://play.zanmeishi.com/song/p/11385.mp3
 https://mp32.9ku.com/upload/128/2016/05/09/543008.mp3
 
 只要有你在我左右 (赞美之泉)
-zyynzwzy.mp3
+/mp3/zyynzwzy.mp3
 
 开路者 Waymaker
 https://play.zanmeishi.com/song/p/43099.mp3
@@ -76,19 +76,16 @@ https://mp3.9ku.com/mp3/544/543056.mp3
 https://mp3.9ku.com/mp3/466/465994.mp3
 
 对我说话 (天韵)
-dwsh.mp3
+/mp3/dwsh.mp3
 
 <h2>新歌：</h2>
 甦醒 Wake (演唱-璽恩)
 https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
 
-恩典之流
-https://play.zanmeishi.com/song/p/15192.mp3
-
-🔥 大能拯救（新歌）
+大能拯救
 https://play.zanmeishi.com/song/p/15789.mp3
 
-🔥 你施恩（新歌）
+你施恩
 https://play.zanmeishi.com/song/p/40881.mp3
 
 坚强的爱
@@ -159,3 +156,42 @@ https://mp3.9ku.com/mp3/544/543047.mp3
 
 宝贵十架
 https://mp3.9ku.com/mp3/544/543017.mp3
+
+🔥 Happy Day_中文版
+https://play.zanmeishi.com/song/p/13961.mp3
+
+恩典之流
+https://play.zanmeishi.com/song/p/15192.mp3
+
+Happy Day
+/mp3/hnb (1).mp3
+
+The Highest And Greatest
+/mp3/hnb (2).mp3
+
+Everything
+/mp3/hnb (3).mp3
+
+Holding Nothing Back
+/mp3/hnb (4).mp3
+
+Clinging To The Cross
+/mp3/hnb (5).mp3
+
+Almighty God
+/mp3/hnb (6).mp3
+
+God Of Justice
+/mp3/hnb (7).mp3
+
+Out Of The Darkness
+/mp3/hnb (8).mp3
+
+Center Of It All
+/mp3/hnb (9).mp3
+
+Living For Your Glory
+/mp3/hnb (10).mp3
+
+Take The World
+/mp3/hnb (11).mp3
