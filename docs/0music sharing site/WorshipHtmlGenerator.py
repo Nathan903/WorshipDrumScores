@@ -1,3 +1,4 @@
+import mytxt
 import fileinput
 import random
 import time
@@ -21,9 +22,10 @@ template = str(f.read())
 f.close()
 
 #read head template
+"""
 f=open(head_file_name , "r", encoding="utf-8")
 head = str(f.read())
-f.close()
+f.close()"""
 
 outputfile = open(outputfile_name,"w", encoding="utf-8")
 outputfile.write("")
@@ -123,15 +125,13 @@ namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
-hd=head+"<header><b>目录（拼音首字母排序）:</b><br>"
+hd=mytxt.head()
 for i in namelist:
-    hd=hd+" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
-hd=hd+" |</header>"
+    hd+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
+hd+=" |"
 
 #add heat to body, then add footer
-out=hd+"""<br><a href="all" style="color:red;">完整歌单</a>""" + out
-out=out+15*"<br>"+"<footer>如音频无法播放代表文件源已阵亡。请到<a href=\"https://github.com/Nathan903/WorshipDrumScores/issues\"style=\"color:red;\">这里</a>提交问题以帮助页面改进"
-out=out +"  <br>last updated " + str(datetime.datetime.now())+"</footer>"
+out=hd+"""<br><br><a href="all" style="color:red;">完整歌单</a>""" +out+mytxt.foot()+str(datetime.datetime.now())
 out=htmlmin.minify(out+"</html>", remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()
