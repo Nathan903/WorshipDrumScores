@@ -3,7 +3,7 @@ def head():
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<head><title>🔥自由赞美 streaming</title><style>a:link { color: black; } a:visited{ color:#cb00de; } </style>
+<head><title>自由赞美 streaming🔥</title><style>a:link { color: black; } a:visited{ color:#cb00de; } </style>
 <font color="white">  
 <body style="background-color:#282923;">
 <style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } </style>
