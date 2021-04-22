@@ -23,6 +23,7 @@ def foot():
 <script data-goatcounter="https://meh.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
+<br><img src="logo.png" alt="logo" width="145" height="80"><br>
 <br>
 如音频无法播放代表文件源已阵亡。请到<a href="https://github.com/Nathan903/WorshipDrumScores/issues"style="color:red;">这里</a>提交问题以帮助页面改进
 <br>
