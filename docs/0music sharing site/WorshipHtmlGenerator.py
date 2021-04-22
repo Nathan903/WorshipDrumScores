@@ -103,7 +103,7 @@ with open('musicsrc.txt', 'r', encoding="utf-8") as in_file:
             lastLineIsName=False
             lastLineIsSrc=False
         #append if line does not contain extension of codec
-        elif not(any(e in line.strip() for e in codeclist)):
+        elif not(any(e in line.strip() for e in codeclist) or "http" in line.strip()):
             w=tlist[0]+getInitial(line.strip())[0]+tlist[1]+getInitial(line.strip())[0]+tlist[2]+line.strip()+tlist[3]
             namelist.append(getInitial(line.strip()))
             if lastLineIsSrc:
