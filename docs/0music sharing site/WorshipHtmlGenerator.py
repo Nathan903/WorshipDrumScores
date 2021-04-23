@@ -95,8 +95,10 @@ with open('musicsrc.txt', 'r', encoding="utf-8") as in_file:
         w=""
         if "#" in line.strip():
             pass
-        elif "<" in line.strip():
+        elif "<h" in line.strip():
             w="<br><hr>"+line.strip()
+        elif "<i" in line.strip():
+            w=line.strip()
         elif (len(line.strip())==0):
             if lastLineIsSrc:
                 w=tlist[7]+tlist[8]
