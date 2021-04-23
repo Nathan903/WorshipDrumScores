@@ -9,6 +9,8 @@ import re
 import htmlmin
 import zhon.hanzi 
 #might need updates
+listsrc='musicsrc.txt'
+listsrc='recordings.txt'
 codeclist = ["mp3","m4a", "ogg"]
 templatefilename = "bodytemplate.html"
 head_file_name = "head.html"
@@ -87,7 +89,7 @@ def rp(filename, text_to_search, replacement_text):
 out = ""
 ww=""
 namelist = []
-with open('musicsrc.txt', 'r', encoding="utf-8") as in_file:
+with open(listsrc, 'r', encoding="utf-8") as in_file:
     lastLineIsName=False
     lastLineIsSrc=False
     for line in in_file:
