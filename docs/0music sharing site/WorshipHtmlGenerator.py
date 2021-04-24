@@ -13,10 +13,11 @@ listsrc='musicsrc.txt'
 #listsrc='recordings.txt'
 outputfile_name ="index.html"
 otitle = "自由赞美 streaming"
-
+"""
 listsrc='0430.txt'
 outputfile_name ="0430.html"
 otitle = "0430服侍歌单"
+"""
 codeclist = ["mp3","m4a", "ogg"]
 #templatefilename = "bodytemplate.html"
 #head_file_name = "head.html"

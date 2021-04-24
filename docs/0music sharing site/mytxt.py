@@ -1,4 +1,7 @@
 def head(title):
+	extra=""
+	if any(map(str.isdigit, title)):
+		extra = """ | <a href="/" style="color:red;">主页</a>"""
 	return ("""
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +17,12 @@ def head(title):
 <a href="all" style="color:red;">完整歌单</a> | 
 <a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
 <a href="about" style="color:red;">关于</a>
+"""+extra+"""
 <br><br>
 <body>
 <b>目录（拼音首字母排序）:</b><br>
 """)
+
 foot=("""
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101311893);</script>
 <script async src="//static.getclicky.com/js"></script>
