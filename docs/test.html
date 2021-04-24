@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+
+<a href="#main"  class="button scrolly" onclick="playVid()">Alright let's go</a>
+<video id="myVideo" style="max-height: 100%;" poster="white.jpg">
+<source src="awesome_1.mp4" type="video/mp4">
+</video>
+<script> 
+	var vid = document.getElementById("myVideo"); 
+	function playVid() { 
+      vid.play(); 
+    } 
+    
+    function pauseVid() { 
+      vid.pause(); 
+    } 
+</script> 
+
+</html>
