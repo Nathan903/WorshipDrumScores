@@ -1,15 +1,16 @@
-head=("""
+def head(title):
+	return ("""
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<head><title>自由赞美 streaming</title><style>a:link { color: black; } a:visited{ color:#cb00de; } </style>
+<head><title>"""+title+"""</title><style>a:link { color: black; } a:visited{ color:#cb00de; } </style>
 <font color="white">  
 <body style="background-color:#282923;">
 <style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } </style>
 </head>
 
 <style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
-<h1>自由赞美 streaming</h1>
+<h1>"""+title+"""</h1>
 <a href="all" style="color:red;">完整歌单</a> | 
 <a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
 <a href="about" style="color:red;">关于</a>

@@ -11,14 +11,18 @@ import zhon.hanzi
 #might need updates
 listsrc='musicsrc.txt'
 #listsrc='recordings.txt'
-listsrc='0430.txt'
+outputfile_name ="index.html"
+otitle = "自由赞美 streaming"
 
+listsrc='0430.txt'
+outputfile_name ="0430.html"
+otitle = "0430服侍歌单"
 codeclist = ["mp3","m4a", "ogg"]
 #templatefilename = "bodytemplate.html"
 #head_file_name = "head.html"
 name_placeholder ="#name#"
 src_placeholder ="#src#"
-outputfile_name ="index.html"
+
 #outputfile_name =input("name for output HTML file: ") + ".html"
 
 #read body template
@@ -134,7 +138,7 @@ namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
-hd=mytxt.head
+hd=mytxt.head(otitle)
 for i in namelist:
     hd+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
 hd+=" |"
