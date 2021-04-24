@@ -11,7 +11,7 @@ import zhon.hanzi
 #might need updates
 listsrc='musicsrc.txt'
 #listsrc='recordings.txt'
-#listsrc='src.txt'
+listsrc='0430.txt'
 
 codeclist = ["mp3","m4a", "ogg"]
 #templatefilename = "bodytemplate.html"
