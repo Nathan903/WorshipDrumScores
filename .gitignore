@@ -8,3 +8,4 @@
 *.3gp
 */0*.pdf
 0*.pdf
+!/docs/*.mp4
