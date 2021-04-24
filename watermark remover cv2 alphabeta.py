@@ -61,7 +61,7 @@ Ftrash = r"E:\\"
 for i in range(4):
     i+=1
     n = "h" +" (" + str(i)+").jpg"
-    trysingle(Ftrash, n,2.165,-165.0,"cv2loop")
+    trysingle(Ftrash, n,2.165,-233.0,"cv2loop")
 
 #小小董伴奏：alpha2.16beta165.0
 #（绿色灰色）鼓手学院：2.155,-205

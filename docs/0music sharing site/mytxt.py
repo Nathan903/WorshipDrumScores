@@ -1,5 +1,4 @@
-def head():
-    return ("""
+head=("""
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,13 +9,15 @@ def head():
 </head>
 
 <style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
-<div><h1>自由赞美 streaming</h1>
-</div>
+<h1>自由赞美 streaming</h1>
+<a href="all" style="color:red;">完整歌单</a> | 
+<a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
+<a href="about" style="color:red;">关于</a>
+<br><br>
 <body>
 <b>目录（拼音首字母排序）:</b><br>
 """)
-def foot():
-    return ("""
+foot=("""
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101311893);</script>
 <script async src="//static.getclicky.com/js"></script>
 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101311893ns.gif" /></p></noscript>
@@ -28,3 +29,13 @@ def foot():
 如音频无法播放代表文件源已阵亡。请到<a href="https://github.com/Nathan903/WorshipDrumScores/issues"style="color:red;">这里</a>提交问题以帮助页面改进
 <br>
 last updated """)
+
+
+template= ("""0<p id="$1"><a href="#$1">$2</a></p>
+$3<audio controls loop preload="none">$4<source src="$5" type="audio/mpeg">$6404</audio>
+$7<br>
+""")
+
+nav = ("""
+
+""")

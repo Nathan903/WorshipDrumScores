@@ -10,19 +10,24 @@ import htmlmin
 import zhon.hanzi 
 #might need updates
 listsrc='musicsrc.txt'
-listsrc='recordings.txt'
+#listsrc='recordings.txt'
+#listsrc='src.txt'
+
 codeclist = ["mp3","m4a", "ogg"]
-templatefilename = "bodytemplate.html"
-head_file_name = "head.html"
+#templatefilename = "bodytemplate.html"
+#head_file_name = "head.html"
 name_placeholder ="#name#"
 src_placeholder ="#src#"
 outputfile_name ="index.html"
+#outputfile_name =input("name for output HTML file: ") + ".html"
 
 #read body template
+"""
 f=open(templatefilename, "r", encoding="utf-8")
 template = str(f.read())
 f.close()
-
+"""
+template = mytxt.template
 #read head template
 """
 f=open(head_file_name , "r", encoding="utf-8")
@@ -129,13 +134,13 @@ namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
-hd=mytxt.head()
+hd=mytxt.head
 for i in namelist:
     hd+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
 hd+=" |"
 
 #add heat to body, then add footer
-out=hd+"""<br><br><a href="all" style="color:red;">完整歌单</a>""" +out+mytxt.foot()+str(datetime.datetime.now())
+out=hd+"<br>"+out+mytxt.foot+str(datetime.datetime.now())
 out=htmlmin.minify(out+"</html>", remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()
