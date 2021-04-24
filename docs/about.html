@@ -8,6 +8,15 @@
 	<br>
 	<a href="store">Buy</a> | <a href="#myVideo" onclick="playVid()">Copyright complaint</a> | <a href="https://github.com/Nathan903/WorshipDrumScores/tree/main/docs"> Contribute </a> | <a href="terms"> Terms of Service </a>
 
+<script> 
+	var vid = document.getElementById("myVideo"); 
+	function playVid() { 
+		vid.play(); 
+	} 
+function pauseVid() { 
+	vid.pause(); 
+}
+</script> 
 	<br><br><br>
 
 	<p><font face="Impact" >CENSORSHIP <br> IS COWARDICE<br>OF THE TRUTH</font></p>
@@ -29,16 +38,8 @@
 
 	<br>
 	<br>
-	<video id="myVideo" style="max-height: 100%;" poster="white.jpg">
+	<video id="myVideo" style="max-height: 100%;">
 		<source src="awesome_1.mp4" type="video/mp4">
 	</video>
-	<script> 
-		var vid = document.getElementById("myVideo"); 
-		function playVid() { 
-			vid.play(); 
-		} 
-    function pauseVid() { 
-    	vid.pause(); 
-    }
-    </script> 
+	
 </html>
