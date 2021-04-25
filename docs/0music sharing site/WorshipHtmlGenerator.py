@@ -105,11 +105,11 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
     for line in in_file:
         #pass if line is
         w=""
-        if "#" in line.strip():
+        if "#" in line.strip()[0:2]:
             pass
         elif "<h" in line.strip():
             w="<br><hr>"+line.strip()
-        elif "<i" in line.strip():
+        elif "<i" in line.strip() or "<p" in line.strip():
             w=line.strip()
         elif (len(line.strip())==0):
             if lastLineIsSrc:
