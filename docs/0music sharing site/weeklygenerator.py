@@ -23,7 +23,7 @@ codeclist = ["mp3","m4a", "ogg"]
 #head_file_name = "head.html"
 name_placeholder ="#name#"
 src_placeholder ="#src#"
-
+scorelink = input("weiyun link: ")
 #outputfile_name =input("name for output HTML file: ") + ".html"
 
 #read body template
@@ -105,11 +105,11 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
     for line in in_file:
         #pass if line is
         w=""
-        if "#" in line.strip():
+        if "#" in line.strip()[0:2]:
             pass
         elif "<h" in line.strip():
             w="<br><hr>"+line.strip()
-        elif "<i" in line.strip():
+        elif "<i" in line.strip() or "<p" in line.strip():
             w=line.strip()
         elif (len(line.strip())==0):
             if lastLineIsSrc:
@@ -139,10 +139,10 @@ namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
-hd=mytxt.head(otitle)[:-29]
+hd=mytxt.head(otitle)[:-40]+"""| <a href=" """+scorelink+ """ "style="color:#00ffff;">简谱</a>"""
 
 #add heat to body, then add footer
-out=hd+"<br>"+out+mytxt.foot+str(datetime.datetime.now())
+out=hd+out+mytxt.foot+str(datetime.datetime.now())
 out=htmlmin.minify(out+"</html>", remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()

@@ -160,7 +160,7 @@ https://mp32.9ku.com/upload/128/2016/05/12/543033.mp3
 🔥让赞美飞扬
 https://mp3.9ku.com/mp3/543/542875.mp3
 
-<small style="color:#d7d7d7; text-align:right;"> 🍉<i> lives in a </i>🚢</small>
+<small style="color:#d7d7d7; text-align:right;"> 🍉 <i>and</i> 🍄 <i>are best friends</i></small>
 
 喜乐泉源
 https://mp3.9ku.com/mp3/544/543047.mp3
@@ -222,3 +222,5 @@ https://play.zanmeishi.com/song/p/8480.mp3
 Take The World
 /mp3/hnb (11).mp3
 https://play.zanmeishi.com/song/p/8481.mp3
+
+#<small style="color:#d7d7d7; text-align:right;"> 🍉<i> lives in a </i>🚢</small>
