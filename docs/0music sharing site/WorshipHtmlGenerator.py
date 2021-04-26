@@ -10,14 +10,14 @@ import htmlmin
 import zhon.hanzi 
 #might need updates
 listsrc='musicsrc.txt'
-#listsrc='recordings.txt'
 outputfile_name ="index.html"
 otitle = "自由赞美 streaming"
-"""
-listsrc='0430.txt'
-outputfile_name ="0430.html"
-otitle = "0430服侍歌单"
-"""
+
+
+listsrc='weworshipshh src.txt'
+outputfile_name ="all.html"
+otitle = "教会全歌单"
+
 codeclist = ["mp3","m4a", "ogg"]
 #templatefilename = "bodytemplate.html"
 #head_file_name = "head.html"

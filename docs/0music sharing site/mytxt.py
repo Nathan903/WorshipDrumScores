@@ -2,6 +2,8 @@ def head(title):
 	extra=""
 	if any(map(str.isdigit, title)):
 		extra = """ | <a href="/" style="color:red;">主页</a>"""
+	if not("自由赞美" in title):
+		extra = """ | <a href="/" style="color:red;">主页</a>"""
 	return ("""
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
