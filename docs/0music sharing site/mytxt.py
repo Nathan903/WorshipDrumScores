@@ -38,7 +38,7 @@ last updated """)
 
 
 template= ("""0<p id="$1"><a href="#$1">$2</a></p>
-$3<audio controls loop preload="none" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
+$3<audio controls loop controlsList="nodownload" preload="none" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
 $7<br>
 """)
 
