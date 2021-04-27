@@ -1,5 +1,8 @@
 import mytxt
 from langconv import Converter
+from zhconv import convert
+import sys
+import os
 import fileinput
 import random
 import time
@@ -73,11 +76,14 @@ def is_Chinese(word):
         if '\u4e00' <= ch <= '\u9fff':
             return True
     return False
-
+"""
 def cht_to_chs(line):
     line = Converter('zh-hans').convert(line)
     line.encode('utf-8')
     return line
+"""
+def cht_to_chs(line):
+    return(convert(line, 'zh-cn'))
 
 #get short title and initial (e.g. ['lzhl', '两只老虎'])
 def getInitial(inputString):
