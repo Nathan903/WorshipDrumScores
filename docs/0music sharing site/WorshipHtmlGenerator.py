@@ -1,4 +1,5 @@
 import mytxt
+from langconv import Converter
 import fileinput
 import random
 import time
@@ -7,7 +8,8 @@ import string
 from pypinyin import Style, pinyin
 import re
 import htmlmin
-import zhon.hanzi 
+import zhon.hanzi
+
 #might need updates
 listsrc='musicsrc.txt'
 outputfile_name ="index.html"
@@ -16,7 +18,7 @@ otitle = "自由赞美 streaming"
 
 listsrc='weworshipshh src.txt'
 outputfile_name ="all.html"
-otitle = "教会全歌单"
+otitle = "教会全歌单（简体）"
 
 codeclist = ["mp3","m4a", "ogg"]
 #templatefilename = "bodytemplate.html"
@@ -47,7 +49,6 @@ outputfile.close()
 tlist = template.split("$")
 for i in range(len(tlist)):
     tlist[i]=(tlist[i][1:])
-print(tlist)
 print("\n")
 
 #make working template file
@@ -73,8 +74,14 @@ def is_Chinese(word):
             return True
     return False
 
+def cht_to_chs(line):
+    line = Converter('zh-hans').convert(line)
+    line.encode('utf-8')
+    return line
+
 #get short title and initial (e.g. ['lzhl', '两只老虎'])
 def getInitial(inputString):
+    inputString=cht_to_chs(inputString).replace("祢", "你").replace("祂", "他").replace("著","着")
     if is_Chinese(strip_emoji(inputString[0:4])):
         l1 = inputString.split("(")
         l11 = l1[0].split("（")
