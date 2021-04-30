@@ -58,10 +58,10 @@ def trymany(dirname, fname, an, amin, amax, bn, bmin, bmax):
 Ftrash = r"E:\\"
 #trysingle(Ftrash, "b.jpg", 2.155,-220,"cv2")
 
-for i in range(4):
+for i in range(1):
     i+=1
-    n = "h" +" (" + str(i)+").jpg"
-    trysingle(Ftrash, n,2.165,-233.0,"cv2loop")
+    n = "v" +" (" + str(i)+").jpg"
+    trysingle(Ftrash, n,1.8,-100.0,"cv2loop")
 
 #小小董伴奏：alpha2.16beta165.0
 #（绿色灰色）鼓手学院：2.155,-205
