@@ -11,3 +11,5 @@
 0*.mp3
 */0*.mp3
 !/docs/*.mp4
+*\temp*
+*/temp*
