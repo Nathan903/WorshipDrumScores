@@ -13,6 +13,7 @@ listsrc='musicsrc.txt'
 #listsrc='recordings.txt'
 outputfile_name ="index.html"
 otitle = "自由赞美 streaming"
+scorelink="404"
 
 week=input("enter week 0000: ")
 listsrc=week+'.txt'
@@ -23,7 +24,6 @@ codeclist = ["mp3","m4a", "ogg"]
 #head_file_name = "head.html"
 name_placeholder ="#name#"
 src_placeholder ="#src#"
-scorelink = input("weiyun link: ")
 #outputfile_name =input("name for output HTML file: ") + ".html"
 
 #read body template
@@ -32,7 +32,7 @@ f=open(templatefilename, "r", encoding="utf-8")
 template = str(f.read())
 f.close()
 """
-template = mytxt.template
+template = mytxt.template1
 #read head template
 """
 f=open(head_file_name , "r", encoding="utf-8")
@@ -107,6 +107,8 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
         w=""
         if "#" in line.strip()[0:2]:
             pass
+        elif "share.weiyun.com" in line.strip():
+            scorelink =line.strip()
         elif "<h" in line.strip():
             w="<br><hr>"+line.strip()
         elif "<i" in line.strip() or "<p" in line.strip():

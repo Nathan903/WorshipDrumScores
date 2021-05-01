@@ -15,15 +15,15 @@ def removeComments(string):
             return match.group(1) # captured quoted-string
     return regex.sub(_replacer, string)
 
-src = 'encrypted.html'
+src = 'index_original.htm'
 #src = 'index.html'
 
 f = open(src,'r',encoding='utf-8')
 s=f.read()
 s=removeComments(s)
-o=open('all.html','w',encoding='utf-8')
+o=open('index.htm','w',encoding='utf-8')
 
-s = minify_html.minify(s, minify_js=True, minify_css=True)
+s = s# minify_html.minify(s, minify_js=True, minify_css=True)
 o.write(s)
 o.close()
 f.close()
