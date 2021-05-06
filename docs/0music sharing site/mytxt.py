@@ -1,4 +1,4 @@
-def head(title):
+def head(title,h1=""):
 	extra=""
 	if any(map(str.isdigit, title)):
 		extra = """ | <a href="/" style="color:red;">主页</a>"""
@@ -15,7 +15,7 @@ def head(title):
 </head>
 
 <style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
-<h1>"""+title+"""</h1>
+"""+h1+"""
 <a href="/all" style="color:red;">完整歌单</a> | 
 <a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
 <a href="/about" style="color:red;">关于</a>

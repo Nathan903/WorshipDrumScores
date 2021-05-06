@@ -154,7 +154,7 @@ namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
-hd=mytxt.head(otitle)
+hd=mytxt.head(otitle,"<br>")
 for i in namelist:
     hd+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
 hd+=" |"

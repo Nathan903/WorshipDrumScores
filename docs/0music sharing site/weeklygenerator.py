@@ -141,7 +141,7 @@ namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
-hd=mytxt.head(otitle)[:-40]+"""| <a href=" """+scorelink+ """ "style="color:#00ffff;">简谱</a>"""
+hd=mytxt.head(otitle,"<h1>"+otitle+"</h1>")[:-40]+"""| <a href=" """+scorelink+ """ "style="color:#00ffff;">简谱</a>"""
 
 #add heat to body, then add footer
 out=hd+out+mytxt.foot+str(datetime.datetime.now())
