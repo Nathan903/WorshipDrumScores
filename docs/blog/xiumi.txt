@@ -4,3 +4,15 @@
 	title
 remove banner
 script
+
+
+steps:
+	1. get预览链接：
+		点预览
+		手机扫二维码
+		转发给自己电脑
+		用chrome打开链接
+	2. 保存：
+		保存网页为 “网页，全部(htm, html)”
+		重命名为 0514（ddmm日期）
+	3. 上传至github
