@@ -15,13 +15,13 @@ print(toChinese("%E4%BB%80%E4%B9%88%E7%B2%89"))
 """
 
 #victim:https://weworshipshh.com/main.php?go=home&key_name=&key_name_len=0
-#page = main.php
+page = "main.php"#"總目錄.html"
 #https://weworshipshh.com//mp3/02_HJ_%E5%9B%9E%E5%AE%B6.mp3
 songlist = []
 lbak = []
 t=[]
 i=0
-with open('main.php','r',encoding="utf8") as f:
+with open(page,'r',encoding="utf8") as f:
     for l in f:
         if ("<td align=\"left\">"==l[8:25]):
             s=l.split(">")[1].split("<")[0]
@@ -42,9 +42,11 @@ for i in range(len(lbak)):
         t[i]=t[i].replace(lbak[i],'')
 print(t)
 """
-
-f = open('worshipshh_src.txt', 'a')
+print(songlist[-1])
+f = open('weworshipshh_src.txt','a',encoding="utf8")
 for a in songlist:
     f.write(a[0]+"\n")
-    f.write(toUrl("https://weworshipshh.com/"+a[1][1:]))
+    f.write(toUrl("https://weworshipshh.com/"+a[1][1:])+"\n")
+    f.write(toUrl("https://t.tehc.workers.dev/-----https://weworshipshh.com/"+a[1][1:]))
     f.write(2*"\n")
+f.close()
