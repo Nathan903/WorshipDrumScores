@@ -1,8 +1,12 @@
+
 校歌
 mp3/校歌vocal edited.mp3
 
 欢迎歌
 mp3/欢迎歌 edited.mp3
+
+奉献歌
+mp3/我献上赞美 edited.mp3
 
 散会歌
 mp3/散会歌.mp3
@@ -22,5 +26,8 @@ mp3/谢饭歌.mp3
 小乌龙
 mp3/小乌龙.mp3
 
-冰原漂移舞
-mp3/冰原漂移舞.mp3
+#冰原漂移舞
+#mp3/冰原漂移舞.mp3
+
+<h3><a href="stagepas" style=color:#00ffff;>STAGEPAS说明书</a>
+<a href="sop" style=color:#00ffff;>音控流程</a></h3>
