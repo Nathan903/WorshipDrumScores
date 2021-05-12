@@ -20,7 +20,7 @@ listsrc='musicsrc.txt'
 outputfile_name ="index.html"
 otitle = "自由赞美 streaming"
 
-listsrc='weworshipshh_src_n.txt'
+listsrc='weworshipshh_src.txt'
 outputfile_name ="all.html"
 otitle = "教会全歌单（简体）"
 

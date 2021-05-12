@@ -46,7 +46,6 @@ print(songlist[-1])
 f = open('weworshipshh_src.txt','a',encoding="utf8")
 for a in songlist:
     f.write(a[0]+"\n")
-    f.write(toUrl("https://weworshipshh.com/"+a[1][1:])+"\n")
-    f.write(toUrl("https://t.tehc.workers.dev/-----https://weworshipshh.com/"+a[1][1:]))
+    f.write(toUrl("https://weworshipshh.com/"+a[1][1:]))
     f.write(2*"\n")
 f.close()
