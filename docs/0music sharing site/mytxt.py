@@ -12,6 +12,8 @@ def head(title,h1=""):
 <font color="white">  
 <body style="background-color:#282923;">
 <style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } </style>
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
+<script async src="//static.getclicky.com/js"></script>
 </head>
 
 <style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
