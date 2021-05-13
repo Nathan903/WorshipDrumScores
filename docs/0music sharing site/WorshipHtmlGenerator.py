@@ -64,6 +64,19 @@ workingtemplatefile.write(template)
 workingtemplatefile.close()
 """
 
+style="""
+<style>
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 90%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+</style>"""
 #make output file
 outputfile = open(outputfile_name,"a+",encoding="utf-8")
 
@@ -123,7 +136,7 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
         if "#" in line.strip()[0:2]:
             pass
         elif "<h" in line.strip():
-            w="<br><hr>"+line.strip()
+            w="<hr>"+line.strip()
         elif "<i" in line.strip() or "<p" in line.strip():
             w=line.strip()
         elif (len(line.strip())==0):
@@ -148,7 +161,7 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
         ww=ww+w
     if lastLineIsSrc:
         ww=ww+tlist[7]+tlist[8] +tlist[8]
-out = out + ww
+out = out + """<div id="myTable">"""+ww+"</div>"
 
 namelist.sort(key = lambda x: x[0])
 #print(namelist)
@@ -157,11 +170,11 @@ namelist.sort(key = lambda x: x[0])
 hd=mytxt.head(otitle,"<br>")
 for i in namelist:
     hd+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
-hd+=" |"
+hd+=" |"+style+ """<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入搜索字..." title="Type in a name">"""
 
 #add heat to body, then add footer
-out=hd+"<br>"+out+mytxt.foot+str(datetime.datetime.now())
-out=htmlmin.minify(out+"</html>", remove_empty_space=True)
+out=hd+out+mytxt.foot+str(datetime.datetime.now())
+#out=htmlmin.minify(out+"</html>", remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()
 

@@ -12,11 +12,32 @@ def head(title,h1=""):
 		<title>"""+title+"""</title>
 		<font color="white">  
 		<body style="background-color:#282923;">
-		<style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } </style>
+		<style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } 
+		</style>
 		<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
 		<script async src="//static.getclicky.com/js"></script>
 	</head>
-	<style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
+<script>
+	function myFunction() {
+	  var input, filter, table, tr, td, i, txtValue;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("myTable");
+	  tr = table.getElementsByTagName("div");
+
+	  for (i = 0; i < tr.length; i++) {
+	    td = tr[i].getElementsByTagName("a")[0];
+	    if (td) {
+	      txtValue = td.textContent || td.innerText;
+	      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    }       
+	  }
+	}
+</script>
 	"""+h1+"""
 	<a href="/all" style="color:red;">曲库</a> | 
 	<a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
@@ -43,9 +64,9 @@ foot=("""
 last updated """)
 
 
-template= ("""0<p id="$1"><a href="#$1">$2</a></p>
+template= ("""0<div><p id="$1"><a href="#$1">$2</a></p>
 $3<audio controls loop controlsList="nodownload" preload="none" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
-$7<br>
+$7<br></div>
 """)
 template1= ("""0<p id="$1"><a href="#$1">$2</a></p>
 $3<audio controls loop controlsList="nodownload" preload="auto" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
