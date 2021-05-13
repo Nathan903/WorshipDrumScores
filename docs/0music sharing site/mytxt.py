@@ -6,25 +6,27 @@ def head(title,h1=""):
 		extra = """ | <a href="/" style="color:red;">主页</a>"""
 	return ("""
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<head><title>"""+title+"""</title><style>a:link { color: black; } a:visited{ color:#cb00de; } </style>
-<font color="white">  
-<body style="background-color:#282923;">
-<style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } </style>
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
-<script async src="//static.getclicky.com/js"></script>
-</head>
-
-<style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
-"""+h1+"""
-<a href="/all" style="color:red;">完整歌单</a> | 
-<a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
-<a href="/about" style="color:red;">关于</a>
-"""+extra+"""
-<br><br>
-<body>
-<b>目录（拼音首字母排序）:</b><br>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<head>
+		<title>"""+title+"""</title>
+		<font color="white">  
+		<body style="background-color:#282923;">
+		<style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } </style>
+		<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
+		<script async src="//static.getclicky.com/js"></script>
+	</head>
+	<style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
+	"""+h1+"""
+	<a href="/all" style="color:red;">完整歌单</a> | 
+	<a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
+	<a href="/pa" style="color:red;">音控</a> | 
+	<a href="/blog" style="color:red;">报刊</a> | 
+	<a href="/about" style="color:red;">关于</a>
+	"""+extra+"""
+	<br><br>
+	<body>
+	<b>目录（拼音首字母排序）:</b><br>
 """)
 
 foot=("""
