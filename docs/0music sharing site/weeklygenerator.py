@@ -111,7 +111,7 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
             scorelink =line.strip()
         elif "<h" in line.strip():
             w="<br><hr>"+line.strip()
-        elif "<i" in line.strip() or "<p" in line.strip():
+        elif "<i" in line.strip() or "<p" in line.strip() or "<a" in line.strip():
             w=line.strip()
         elif (len(line.strip())==0):
             if lastLineIsSrc:

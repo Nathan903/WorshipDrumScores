@@ -29,5 +29,6 @@ mp3/小乌龙.mp3
 #冰原漂移舞
 #mp3/冰原漂移舞.mp3
 
-<h3><a href="stagepas" style=color:#00ffff;>STAGEPAS说明书</a>
-<a href="sop" style=color:#00ffff;>音控流程</a></h3>
+<h3><a href="stagepas" style=color:#00ffff;>STAGEPAS说明书</a><br>
+<a href="sop" style=color:#00ffff;>音控流程</a><br>
+<a href="https://shimo.im/docs/QTGRXwhtHxK6qKwQ" style=color:#00ffff;>音控日志</a></h3>
