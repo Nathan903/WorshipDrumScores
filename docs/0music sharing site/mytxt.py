@@ -18,7 +18,7 @@ def head(title,h1=""):
 	</head>
 	<style>@media only screen and (max-width: 768px) {div {display: none;}}</style>
 	"""+h1+"""
-	<a href="/all" style="color:red;">完整歌单</a> | 
+	<a href="/all" style="color:red;">曲库</a> | 
 	<a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
 	<a href="/pa" style="color:red;">音控</a> | 
 	<a href="/blog" style="color:red;">报刊</a> | 
