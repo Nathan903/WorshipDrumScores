@@ -1,1 +1,1 @@
-tree.exe -H "/blog" > dir.html
+tree.exe -H "" > dir.html
