@@ -56,6 +56,7 @@ foot=("""
 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101311893ns.gif" /></p></noscript>
 <script data-goatcounter="https://meh.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
 </body><br>
 <br><br>
 <br>
