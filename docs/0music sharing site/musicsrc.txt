@@ -135,7 +135,7 @@ https://mp3.9ku.com/mp3/544/543052.mp3
 https://mp3.9ku.com/mp3/543/542964.mp3
 
 我已得自由
-/mp3/wydzy.mp3
+/mp3/wydzy.webm
 http://mp3.jidujiao.com/jtck/%E6%88%91%E5%B7%B2%E5%BE%97%E8%87%AA%E7%94%B1.mp3
 
 赞美之泉
@@ -248,7 +248,6 @@ https://weworshipshh.com//mp3/03%20%E6%88%90%E7%82%BA%E7%A5%9E%E8%B9%9F%E7%9A%84
 尊贵全能神（尊贵耶和华）
 /mp3/zgqns.mp3
 http://mp3.jidujiao.com/zanmeizhiquan/%E5%B0%8A%E8%B4%B5%E5%85%A8%E8%83%BD%E7%A5%9E.mp3
-/mp3/zgqns.mp3
 
 住在你里面
 https://t.tehc.workers.dev/-----http://mp3.jidujiao.com/zanmeizhiquan/%E4%BD%8F%E5%9C%A8%E4%BD%A0%E9%87%8C%E9%9D%A2.mp3
@@ -275,6 +274,7 @@ https://play.zanmeishi.com/song/p/28939.mp3
 
 此生爱你不渝
 https://play.zanmeishi.com/song/p/13693.mp3
+
 
 #<small style="color:#d7d7d7; text-align:right;"> 🍉 <i>and</i> 🍄 <i>are best friends</i></small>
 #<small style="color:#d7d7d7; text-align:right;"> 🦊<i> likes to eat </i>🍃</small>
