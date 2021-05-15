@@ -94,8 +94,9 @@ https://mp3.9ku.com/mp3/466/465994.mp3
 <h2>新歌：</h2>
 
 甦醒 Wake (演唱-璽恩)
-https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
-https://t.tehc.workers.dev/-----https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
+https://play.zanmeishi.com/song/p/23934.mp3
+#https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
+#https://t.tehc.workers.dev/-----https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
 
 大能拯救
 https://play.zanmeishi.com/song/p/15789.mp3
