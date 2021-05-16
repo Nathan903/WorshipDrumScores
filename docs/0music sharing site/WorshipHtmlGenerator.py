@@ -188,15 +188,15 @@ namelist.sort(key = lambda x: x[0])
 
 #make head
 tableofcontent="<hr><br><b>目录（拼音首字母排序）:</b><br>"
-hd=mytxt.head(otitle,"<br>")
+hd=mytxt.head(otitle,"")
 for i in namelist:
     tableofcontent+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
 tableofcontent+=" |"
-hd+=searchscript+"""<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入拼音首写/中文，按enter搜索" title="Type in a name">"""
+hd+=searchscript+"""<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入拼音首字母/中文，按enter搜索" title="Type in a name">"""
 
 #add heat to body, then add footer
 out=hd+out+tableofcontent+mytxt.foot+str(datetime.datetime.now())
-#out=htmlmin.minify(out+"</html>", remove_empty_space=True)
+out=htmlmin.minify(out+"</html>", remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()
 
