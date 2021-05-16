@@ -73,7 +73,6 @@ searchscript="""
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
 }
 </style>
 
@@ -88,13 +87,11 @@ searchscript="""
 	  for (i = 0; i < tr.length; i++) {
 	    p = tr[i].getElementsByTagName("p")[0];
 	    if (p) {
-	      txtValue = p.textContent || p.innerText;
-	      if (txtValue.toUpperCase().replace(/\s+/g, '').indexOf(filter)>-1 ||p.id.toUpperCase().indexOf(filter)>-1) {
-	        tr[i].style.display = "";
-	      } else {
-	        tr[i].style.display = "none";
-	      }
-	    }       
+          txtValue = p.textContent || p.innerText;
+          if (txtValue.toUpperCase().replace(/\s+/g, '').indexOf(filter)>-1 ||p.id.toUpperCase().indexOf(filter)>-1) {
+            tr[i].style.display = "";}
+          else {tr[i].style.display = "none";}
+          }
 	  }
 	}
 </script>
@@ -159,7 +156,7 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
         if "#" in line.strip()[0:2]:
             pass
         elif "<h" in line.strip():
-            w="<hr>"+line.strip()
+            w="<div>"+line.strip()+"</div>"#"<hr>"+line.strip()
         elif "<i" in line.strip() or "<p" in line.strip():
             w=line.strip()
         elif (len(line.strip())==0):
@@ -190,13 +187,15 @@ namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
+tableofcontent="<hr><br><b>目录（拼音首字母排序）:</b><br>"
 hd=mytxt.head(otitle,"<br>")
 for i in namelist:
-    hd+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
-hd+=" |"+searchscript+"""<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入中文/拼音首写，按enter搜索" title="Type in a name">"""
+    tableofcontent+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
+tableofcontent+=" |"
+hd+=searchscript+"""<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入拼音首写/中文，按enter搜索" title="Type in a name">"""
 
 #add heat to body, then add footer
-out=hd+out+mytxt.foot+str(datetime.datetime.now())
+out=hd+out+tableofcontent+mytxt.foot+str(datetime.datetime.now())
 #out=htmlmin.minify(out+"</html>", remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()

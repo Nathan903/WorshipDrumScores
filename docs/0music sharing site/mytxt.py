@@ -25,9 +25,7 @@ def head(title,h1=""):
 	<a href="/blog" style="color:red;">报刊</a> | 
 	<a href="/about" style="color:red;">关于</a>
 	"""+extra+"""
-	<br><br>
 	<body>
-	<b>目录（拼音首字母排序）:</b><br>
 """)
 
 foot=("""

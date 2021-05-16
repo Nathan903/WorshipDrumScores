@@ -1,5 +1,5 @@
 #higher links are used as default
-<h2>2021歌单25首：</h2>
+<h3>2021歌单25首：</h3>
 
 行神迹的神 (赞美之泉)
 https://god7777777.com/shige/zmzq2/wykj/%E8%A1%8C%E7%A5%9E%E8%BF%B9%E7%9A%84%E7%A5%9E.mp3
@@ -92,7 +92,9 @@ https://mp3.9ku.com/mp3/466/465994.mp3
 对我说话 (天韵)
 /mp3/dwsh.mp3
 
-<h2>新歌：</h2>
+<hr>
+
+<h3>新歌：</h3>
 
 甦醒 Wake (演唱-璽恩)
 https://play.zanmeishi.com/song/p/23934.mp3
