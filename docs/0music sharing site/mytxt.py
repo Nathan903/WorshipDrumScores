@@ -15,12 +15,12 @@ def head(title,h1=""):
 		<style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } 
 		</style>
 		<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
-		<script async src="//static.getclicky.com/js"></script>
+		<script async src="/js/js.js"></script>
 	</head>
 
 	"""+h1+"""
 	<a href="/all" style="color:red;">曲库</a> | 
-	<a href="https://github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
+	<a href="//github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
 	<a href="/pa" style="color:red;">音控</a> | 
 	<a href="/blog" style="color:red;">报刊</a> | 
 	<a href="/about" style="color:red;">关于</a>
@@ -30,10 +30,10 @@ def head(title,h1=""):
 
 foot=("""
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101311893);</script>
-<script async src="//static.getclicky.com/js"></script>
+<script async src="/js/js.js"></script>
 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101311893ns.gif" /></p></noscript>
 <script data-goatcounter="https://meh.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+        async src="/js/count.js"></script>
 
 </body><br>
 <br><br>
