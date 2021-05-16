@@ -63,8 +63,7 @@ workingtemplatefile = open(workingtemplatefilename,"a")
 workingtemplatefile.write(template)
 workingtemplatefile.close()
 """
-
-style="""
+searchscript="""
 <style>
 #myInput {
   background-image: url('/css/searchicon.png');
@@ -76,7 +75,31 @@ style="""
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
-</style>"""
+</style>
+
+<script>
+	function myFunction() {
+	  var input, filter, table, tr, p, i, txtValue;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase().replace(/\s+/g, '');
+	  table = document.getElementById("myTable");
+	  tr = table.getElementsByTagName("div");
+
+	  for (i = 0; i < tr.length; i++) {
+	    p = tr[i].getElementsByTagName("p")[0];
+	    if (p) {
+	      txtValue = p.textContent || p.innerText;
+	      if (txtValue.toUpperCase().replace(/\s+/g, '').indexOf(filter)>-1 ||p.id.toUpperCase().indexOf(filter)>-1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    }       
+	  }
+	}
+</script>
+"""
+
 #make output file
 outputfile = open(outputfile_name,"a+",encoding="utf-8")
 
@@ -170,7 +193,7 @@ namelist.sort(key = lambda x: x[0])
 hd=mytxt.head(otitle,"<br>")
 for i in namelist:
     hd+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
-hd+=" |"+style+ """<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入搜索字..." title="Type in a name">"""
+hd+=" |"+searchscript+"""<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入中文/拼音首写，按enter搜索" title="Type in a name">"""
 
 #add heat to body, then add footer
 out=hd+out+mytxt.foot+str(datetime.datetime.now())
