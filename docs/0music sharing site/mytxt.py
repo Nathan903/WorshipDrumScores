@@ -1,30 +1,30 @@
 def head(title,h1=""):
-	extra=""
+	frontpage=""
 	if any(map(str.isdigit, title)):
-		extra = """ | <a href="/" style="color:red;">主页</a>"""
+		frontpage = """ | <a href="/">主页</a>"""
 	if not("自由赞美" in title):
-		extra = """ | <a href="/" style="color:red;">主页</a>"""
+		frontpage = """ | <a href="/">主页</a>"""
 	return ("""
 <html>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>"""+title+"""</title>
-		<font color="white">  
-		<body style="background-color:#282923;">
-		<style>a:link { color:#edecdd; } a:visited{ color:#FF7597; } 
-		</style>
 		<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
 		<script async src="/js/js.js"></script>
+		<style>body{background-color:#282923}a:link{color:#edecdd}a:visited{color:#ff7597}nav a:link{color:red;filter:hue-rotate()}*{color:#fff}audio{width:90%;height:40px;margin:5 auto}</style>
 	</head>
 
 	"""+h1+"""
-	<a href="/all" style="color:red;">曲库</a> | 
-	<a href="//github.com/Nathan903/WorshipDrumScores/" style="color:red;">鼓谱</a> | 
-	<a href="/pa" style="color:red;">音控</a> | 
-	<a href="/blog" style="color:red;">报刊</a> | 
-	<a href="/about" style="color:red;">关于</a>
-	"""+extra+"""
+
+	<nav>
+		<a href="/all">曲库</a> | 
+		<a href="//github.com/Nathan903/WorshipDrumScores/">鼓谱</a> | 
+		<a href="/pa">音控</a> | 
+		<a href="/blog">报刊</a> | 
+		<a href="/about">关于</a>
+		"""+frontpage+"""
+	</nav>
 	<body>
 """)
 
@@ -43,9 +43,9 @@ foot=("""
 last updated """)
 
 
-template= ("""0<div><p id="$1"><a href="#$1">$2</a></p>
-$3<audio controls loop controlsList="nodownload" preload="none" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
-$7<br></div>
+template= ("""0<p id="$1"><a href="#$1">$2</a><br>
+$3<audio controls loop controlsList="nodownload" preload="none">$4<source src="$5" type="audio/mpeg">$6404</audio>
+$7</p>
 """)
 template1= ("""0<p id="$1"><a href="#$1">$2</a></p>
 $3<audio controls loop controlsList="nodownload" preload="auto" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>

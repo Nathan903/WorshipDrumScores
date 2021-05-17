@@ -1,0 +1,26 @@
+body {
+	background-color:#282923;
+}
+
+a:link {
+	color:#edecdd;
+}
+
+a:visited{
+	color:#FF7597;
+}
+
+nav a:link{
+	color: red;
+	filter: hue-rotate();
+}
+
+* {
+   color: white;
+}
+
+audio{
+    width: 90%;
+    height: 30px;
+   	margin: 5 auto;
+}
