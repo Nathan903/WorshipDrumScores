@@ -170,7 +170,7 @@ hd=mytxt.head(otitle,"")
 for i in namelist:
     tableofcontent+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
 tableofcontent+=" |"
-hd+=searchscript+"""<br><br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入拼音首字母/中文，按enter搜索" title="Type in a name">"""
+hd+=searchscript+"""<br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入拼音首字母/中文，按enter搜索" title="Type in a name">"""
 
 #add heat to body, then add footer
 out=hd+out+tableofcontent+mytxt.foot+str(datetime.datetime.now())
