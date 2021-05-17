@@ -134,7 +134,7 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
         if "#" in line.strip()[0:2]:
             pass
         elif "<h" in line.strip():
-            w="<div>"+line.strip()+"</div>"#"<hr>"+line.strip()
+            w=line.strip()#"<hr>"+line.strip()
         elif "<i" in line.strip() or "<p" in line.strip():
             w=line.strip()
         elif (len(line.strip())==0):
