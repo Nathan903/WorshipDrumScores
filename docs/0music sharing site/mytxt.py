@@ -12,7 +12,7 @@ def head(title,h1=""):
 		<title>"""+title+"""</title>
 		<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
 		<script async src="/js/js.js"></script>
-		<style>body{background-color:#282923}a:link{color:#edecdd}a:visited{color:#ff7597}nav a:link{color:red;filter:hue-rotate()}*{color:#fff}audio{width:90%;height:40px;margin:5 auto}</style>
+		<style>body{background-color:#282923}a:link{color:#edecdd}a:visited{color:#ff7597}nav a:link,visited{color:red;}*{color:#fff}audio{width:90%;height:40px;margin:5 auto}</style>
 	</head>
 
 	"""+h1+"""
