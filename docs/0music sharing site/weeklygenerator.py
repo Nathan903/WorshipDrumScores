@@ -1,13 +1,7 @@
 import mytxt
-import fileinput
-import random
-import time
+from mytxt import getInitial, rp
 import datetime
-import string
-from pypinyin import Style, pinyin
-import re
 import htmlmin
-import zhon.hanzi 
 #might need updates
 listsrc='musicsrc.txt'
 #listsrc='recordings.txt'
@@ -61,41 +55,6 @@ workingtemplatefile.close()
 #make output file
 outputfile = open(outputfile_name,"a+",encoding="utf-8")
 
-#http://stackoverflow.com/a/13752628/6762004
-def strip_emoji(text):
-    RE_EMOJI = re.compile('[\U00010000-\U0010ffff]', flags=re.UNICODE)
-    return RE_EMOJI.sub(r'', text)
-
-#https://blog.csdn.net/weixin_44676081/article/details/97620024
-def is_Chinese(word):
-    for ch in word:
-        if '\u4e00' <= ch <= '\u9fff':
-            return True
-    return False
-
-#get short title and initial (e.g. ['lzhl', '两只老虎'])
-def getInitial(inputString):
-    if is_Chinese(strip_emoji(inputString[0:4])):
-        l1 = inputString.split("(")
-        l11 = l1[0].split("（")
-        l2 = l11[0].split(" ")
-        i=0
-        l = l2[0].translate(str.maketrans('','',string.punctuation))
-        if(len(l2)>1 and len(l2[0])<2 and len(l2[0])<len(l2[1])):
-            l = ("".join(l2[0:2])).translate(str.maketrans('','',string.punctuation))
-        l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
-        return ([strip_emoji("".join(i[0] for i in pinyin(l, style=Style.FIRST_LETTER, strict=False))), l])
-    else:
-        l1 = inputString.split("(")
-        l11 = l1[0].split("（")
-        l = l11[0].translate(str.maketrans('','',string.punctuation))
-        l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
-        return ([strip_emoji(l.replace(" ","").lower()), l])
-
-def rp(filename, text_to_search, replacement_text):
-    with fileinput.FileInput(filename, inplace=True, backup='.bak') as file:
-        for line in file:
-            print(line.replace(text_to_search, replacement_text), end='')
 out = ""
 ww=""
 namelist = []
@@ -135,13 +94,13 @@ with open(listsrc, 'r', encoding="utf-8") as in_file:
         ww=ww+w
     if lastLineIsSrc:
         ww=ww+tlist[7]+tlist[8] +tlist[8]
-out = out + ww
+out = out + """<div id="myTable">"""+ww+"</div>"
 
 namelist.sort(key = lambda x: x[0])
 #print(namelist)
 
 #make head
-hd=mytxt.head(otitle,"<h1>"+otitle+"</h1>")[:-40]+"""| <a href=" """+scorelink+ """ "style="color:#00ffff;">简谱</a>"""
+hd=mytxt.head(otitle,"<h1>"+otitle+"</h1>", scorelink)
 
 #add heat to body, then add footer
 out=hd+out+mytxt.foot+str(datetime.datetime.now())
