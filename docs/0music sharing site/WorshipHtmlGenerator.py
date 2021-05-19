@@ -43,12 +43,11 @@ searchscript="""
 }
 </style>
 
-<script>
-function myFunction(){var input,filter,table,tr,p,i,txtValue;input=document.getElementById("myInput");filter=input.value.toUpperCase().replace(/s+/g,'');table=document.getElementById("myTable");tr=table.getElementsByTagName("p");for(i=0;i<tr.length;i++){p=tr[i];if(p){txtValue=p.id+p.className+p.textContent||p.innerText;if(txtValue.toUpperCase().replace(/s+/g,'').indexOf(filter)>-1){tr[i].style.display="";} else{tr[i].style.display="none";}}}}</script>
+<script>function hide(){var e,t,n,a;for(e=document.getElementById("myInput").value.toUpperCase().replace(/\s+/g,""),t=document.getElementById("myTable").getElementsByTagName("p"),a=0;a<t.length;a++)(n=t[a])&&((n.id+"|"+n.className+"|"+n.textContent||n.innerText).toUpperCase().replace(/\s+/g,"").indexOf(e)>-1?t[a].style.display="":t[a].style.display="none")}</script>
 """
 
 """
-function myFunction() {
+function hide() {
   var input, filter, table, tr, p, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase().replace(/\s+/g, '');
@@ -58,7 +57,7 @@ function myFunction() {
   for (i = 0; i < tr.length; i++) {
     p = tr[i];
     if (p) {
-  txtValue = p.id +p.className+ p.textContent || p.innerText;
+  txtValue = p.id+"|"+p.className+"|"+p.textContent || p.innerText;
   if (txtValue.toUpperCase().replace(/\s+/g, '').indexOf(filter)>-1) {
     tr[i].style.display = "";}
   else {tr[i].style.display = "none";}
@@ -118,7 +117,7 @@ hd=mytxt.head(otitle,"")
 for i in namelist:
     tableofcontent+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
 tableofcontent+=" |"
-hd+=searchscript+"""<br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="输入拼音/首字母/中文，按enter搜索 （例：拣选 / jx / jianxuan）" title="Type in a name">"""
+hd+=searchscript+"""<br><input type="text" id="myInput" onkeyup="hide()" placeholder="输入拼音/首字母/中文，按enter搜索 （例：拣选 / jx / jianxuan）" title="Type in a name">"""
 
 #add heat to body, then add footer
 out=hd+out+tableofcontent+mytxt.foot+str(datetime.datetime.now())
