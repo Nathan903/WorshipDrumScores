@@ -4,12 +4,15 @@ import datetime
 import htmlmin
 
 #might need updates
-listsrc='musicsrc.txt'
-outputfile_name ="index.html"
-otitle = "自由赞美 streaming"
 listsrc='weworshipshh_src.txt'
 outputfile_name ="allpage.html"
 otitle = "教会全歌单（简体）"
+
+
+
+listsrc='musicsrc.txt'
+outputfile_name ="index.html"
+otitle = "自由赞美 streaming"
 
 
 
