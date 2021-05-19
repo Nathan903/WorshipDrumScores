@@ -2,7 +2,6 @@ killswitch=False
 def read_text_file(file_path):
     with open(file_path, 'r', encoding="utf-8") as f:
         lines = f.readlines()
-    print(type(lines))
     with open(file_path, 'w', encoding="utf-8") as f:
         killswitch=False
         for line in lines:
