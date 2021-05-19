@@ -29,12 +29,17 @@ with open(page,'r',encoding="utf8") as f:
             while s[0:1].isdigit():
                 s = s[1:]
             lbak.append(s)
-        if (".pdf" in l) and not("./mp3_player.php?" in l):
+        if (".mp3" in l) and not("./mp3_player.php?" in l):
             a=l.split("\"")[1]
             songlist.append([lbak[-1],a])
+            """
         if (".pptx" in l) and not("./mp3_player.php?" in l):
             a=l.split("\"")[1]
             songlist[-1].append(a)
+        if (".mp3" in l) and not("./mp3_player.php?" in l):
+            a=l.split("\"")[1]
+            songlist[-1].append(a)
+            """
         i+=1
 #print(songlist)
 
@@ -45,14 +50,29 @@ for i in range(len(lbak)):
         t[i]=t[i].replace(lbak[i],'')
 print(t)
 """
-print(songlist[-1])
-f = open('weworshipshh_pptx_pdf.txt','a',encoding="utf8")
+print(songlist)
+
+def write(fname):
+    f = open(fname,'a',encoding="utf8")
+    for a in songlist:
+        f.write(a[0]+"\n")
+        f.write(toUrl("https://weworshipshh.com/"+a[1][2:])+"\n")
+        try:
+            f.write(toUrl("https://weworshipshh.com/"+a[2][2:]))
+        except:
+            pass
+        try:
+            f.write(toUrl("https://weworshipshh.com/"+a[3][2:]))
+        except:
+            pass
+        f.write(2*"\n")
+    f.close()
+write('t.txt')
+
+import os
+def get(name, link):
+    cmd = 'curl -o ' +name+' '+link
+    os.system(cmd)
 for a in songlist:
-    f.write(a[0]+"\n")
-    f.write(toUrl("https://weworshipshh.com/"+a[1][2:])+"\n")
-    try:
-        f.write(toUrl("https://weworshipshh.com/"+a[2][2:]))
-    except:
-        pass
-    f.write(2*"\n")
-f.close()
+    get(a[1][6:], toUrl("https://weworshipshh.com/"+a[1][2:])+"\n")
+    
