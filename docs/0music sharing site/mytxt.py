@@ -112,3 +112,10 @@ def getInitial(inputString):
         l = l11[0].translate(str.maketrans('','',string.punctuation))
         l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
         return ([strip_emoji(l.replace(" ","").lower()), l, ''])
+
+def minifyjs(fname):
+    import requests
+    url = 'https://javascript-minifier.com/raw'
+    data = {'input': open(fname, 'rb').read()}
+    response = requests.post(url, data=data)
+    return "<script>" + response.text +"</script>"
