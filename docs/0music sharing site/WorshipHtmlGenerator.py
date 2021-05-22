@@ -45,12 +45,12 @@ searchscript="""
 }
 </style>
 
-<script>function hide(){var e,t,n,a;for(e=document.getElementById("myInput").value.toUpperCase().replace(/\s+/g,""),t=document.getElementById("myTable").getElementsByTagName("p"),a=0;a<t.length;a++)(n=t[a])&&((n.id+"|"+n.className+"|"+n.textContent||n.innerText).toUpperCase().replace(/\s+/g,"").indexOf(e)>-1?t[a].style.display="":t[a].style.display="none")}function r(){document.getElementById("myInput").value="",hide()}location.href.includes("?")&&(document.getElementById("myInput").value=new URL(window.location.href).searchParams.get("search"),hide());
+<script>
+function hide(){var e,t,n,a;for(e=document.getElementById("myInput").value.toUpperCase().replace(/\s+/g,""),t=document.getElementById("myTable").getElementsByTagName("p"),a=0;a<t.length;a++)(n=t[a])&&((n.id+"|"+n.className+"|"+n.textContent||n.innerText).toUpperCase().replace(/\s+/g,"").indexOf(e)>-1?t[a].style.display="":t[a].style.display="none")}function r(){document.getElementById("myInput").value="",hide()}if(location.href.includes("?")){var u=new URL(window.location.href).searchParams.get("search");document.getElementById("myInput").value=u,hide(),document.title=document.getElementById(u).getElementsByTagName("a")[0].textContent}
 </script>
 """
 
-"""
-function hide() {
+"""function hide() {
   var input, filter, table, tr, p, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase().replace(/\s+/g, '');
@@ -72,11 +72,16 @@ function r() {
     hide()}
     
 if(location.href.includes("?"))
-    {document.getElementById("myInput").value = new URL(window.location.href).searchParams.get("search");
- hide()}
+{
+    var u = new URL(window.location.href).searchParams.get("search");
+    document.getElementById("myInput").value = u;
+    hide();
+    document.title = document.getElementById(u).getElementsByTagName("a")[0].textContent
+}
+
+
 
 document.getElementById("myInput").value = location.href.substring(location.href.indexOf("?")+1);
-
 """
 
 #make output file
