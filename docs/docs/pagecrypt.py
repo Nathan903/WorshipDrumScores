@@ -1,4 +1,4 @@
-def pagecrypt(fname,passwd):
+def pagecrypt(data,passwd):
 	try:
 		from pbkdf2 import PBKDF2
 	except:
@@ -30,40 +30,42 @@ def pagecrypt(fname,passwd):
 
 	def main():
 		# sanitize input
-
+		"""
 		inputfile = fname
+		
 		try:
 			with open(inputfile, "rb") as f:
 				data = f.read()
 		except:
 			print("Cannot open file: %s"%inputfile)
-			exit(1)
+			exit(1)"""
 		passphrase = passwd
 
 
 		salt = Random.new().read(32)
 		iv = Random.new().read(16)
-		key = PBKDF2(passphrase=passphrase,salt=salt,iterations=100).read(32)
+		key = PBKDF2(passphrase=passphrase,salt=salt,iterations=777).read(32)
 
 		cipher = AES.new(key, AES.MODE_CBC, IV=iv)
 		padded = pad(data, 16)
 		encrypted = cipher.encrypt(padded)
 
 		projectFolder = ""#os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-		with open(os.path.join(projectFolder, "decryptTemplate.html")) as f:
+		with open(os.path.join(projectFolder, "template/decryptTemplate.html"), encoding="utf-8") as f:
 			templateHTML = f.read()
 
 		encryptedJSON = "{\"salt\":\"%s\",\"iv\":\"%s\",\"data\":\"%s\"}"%(
 			b64encode(salt).decode("utf-8"), b64encode(iv).decode("utf-8"), b64encode(encrypted).decode("utf-8"))
 		encryptedDocument = templateHTML.replace("/*{{ENCRYPTED_PAYLOAD}}*/\"\"", encryptedJSON)
+		return(encryptedDocument)
 
-		filename, extension = os.path.splitext(inputfile)
-		outputfile = filename + "-protected" + extension
+		filename, extension = os.path.splitext('temp.html')#inputfile)
+		outputfile = filename + "-pagecrypt" + extension
 		with codecs.open(outputfile, 'w','utf-8-sig') as f:
 			f.write(encryptedDocument)
-		print("File saved to %s"%outputfile)
 	"""
 	if __name__ == "__main__":
 		main()"""
 
-	main()
+	return(main())
+
