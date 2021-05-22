@@ -3,7 +3,8 @@
 #curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/asdfasdfasdf
 import htmlmin
 from pagecrypt import pagecrypt
-
+pagecrypt('0000.html','333')
+"""
 title = input("input title: ")
 if title=="":
     title = "报告文档"
@@ -15,7 +16,7 @@ print(htmlmin.minify(s, remove_empty_space=True))
 print("\n")
 
 
-fname='encrypted.html'
+fname='temp.html'
 def compresshtml(fname):
     import requests
     data = {'code': open(fname, 'rb').read()}
@@ -35,5 +36,5 @@ c=s+compresshtml(fname).split("</footer>")[1]
 w=open('temp.html', 'w',encoding="utf-8")
 
 w.write(c)
-w.close()
+w.close()"""
 
