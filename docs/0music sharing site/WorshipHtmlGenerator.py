@@ -17,7 +17,6 @@ otitle = "自由赞美 streaming"
 
 
 
-
 codeclist = ["mp3","m4a", "ogg"]
 
 #outputfile_name =input("name for output HTML file: ") + ".html"
@@ -46,7 +45,8 @@ searchscript="""
 }
 </style>
 
-<script>function hide(){var e,t,n,a;for(e=document.getElementById("myInput").value.toUpperCase().replace(/\s+/g,""),t=document.getElementById("myTable").getElementsByTagName("p"),a=0;a<t.length;a++)(n=t[a])&&((n.id+"|"+n.className+"|"+n.textContent||n.innerText).toUpperCase().replace(/\s+/g,"").indexOf(e)>-1?t[a].style.display="":t[a].style.display="none")}</script>
+<script>function hide(){var e,t,n,a;for(e=document.getElementById("myInput").value.toUpperCase().replace(/\s+/g,""),t=document.getElementById("myTable").getElementsByTagName("p"),a=0;a<t.length;a++)(n=t[a])&&((n.id+"|"+n.className+"|"+n.textContent||n.innerText).toUpperCase().replace(/\s+/g,"").indexOf(e)>-1?t[a].style.display="":t[a].style.display="none")}function r(){document.getElementById("myInput").value="",hide()}location.href.includes("?")&&(document.getElementById("myInput").value=new URL(window.location.href).searchParams.get("search"),hide());
+</script>
 """
 
 """
@@ -66,7 +66,18 @@ function hide() {
   else {tr[i].style.display = "none";}
   }
   }
-}"""
+}
+function r() {
+    document.getElementById("myInput").value=""
+    hide()}
+    
+if(location.href.includes("?"))
+    {document.getElementById("myInput").value = new URL(window.location.href).searchParams.get("search");
+ hide()}
+
+document.getElementById("myInput").value = location.href.substring(location.href.indexOf("?")+1);
+
+"""
 
 #make output file
 outputfile = open(outputfile_name,"a+",encoding="utf-8")
@@ -118,13 +129,13 @@ namelist.sort(key = lambda x: x[0])
 tableofcontent="<hr><br><b>目录（拼音首字母排序）:</b><br>"
 hd=mytxt.head(otitle,"")
 for i in namelist:
-    tableofcontent+=" | <a href=\"#" + i[0] + "\">" + i[1]+"</a>"
+    tableofcontent+=""" | <a onclick="r()" href="#""" + i[0] + "\">" + i[1]+"</a>"
 tableofcontent+=" |"
-hd+=searchscript+"""<br><input type="text" id="myInput" onkeyup="hide()" placeholder="输入拼音/首字母/中文，按enter搜索 （例：拣选 / jx / jianxuan）" title="Type in a name">"""
+hd+="""<br><input type="text" id="myInput" onkeyup="hide()" placeholder="输入拼音/首字母/中文，按enter搜索 （例：拣选 / jx / jianxuan）" title="Type in a name">"""
 
 #add heat to body, then add footer
 out=hd+out+tableofcontent+mytxt.foot+str(datetime.datetime.now())
-out=htmlmin.minify(out+"</html>", remove_empty_space=True)
+out=htmlmin.minify(out+searchscript+"</html>", remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()
 
