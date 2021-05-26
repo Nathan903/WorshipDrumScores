@@ -9,9 +9,15 @@ function hide() {
     p = tr[i];
     if (p) {
   txtValue = p.id+"|"+p.className+"|"+p.textContent || p.innerText;
+
   if (txtValue.toUpperCase().replace(/\s+/g, '').indexOf(filter)>-1) {
-    tr[i].style.display = "";}
-  else {tr[i].style.display = "none";}
+    tr[i].style.display = "";
+    console.log(p.getElementsByTagName("audio")[0].preload)
+   	p.getElementsByTagName("audio")[0].preload="none";
+}
+
+  else {tr[i].style.display = "none";
+}
   }
   }
 }

@@ -29,13 +29,12 @@ def head(title,h1="", scorelink=""):
         <a href="/about">关于</a> |
         <a href="/">主页</a>"""
     return ("""
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>"""+title+"""</title>
-		<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
-		<script async src="/js/js.js"></script>
 		<style>body{background-color:#282923}a:link{color:#edecdd}a:visited{color:#ff7597}nav a:link,nav a:visited{color:red;}*{color:#fff}audio{width:90%;height:40px;margin:5 auto}</style>
 	</head>
 
@@ -49,18 +48,23 @@ def head(title,h1="", scorelink=""):
 """)
 
 foot=("""
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101311893);</script>
-<script async src="/js/js.js"></script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101311893ns.gif" /></p></noscript>
-<script data-goatcounter="https://meh.goatcounter.com/count"
-        async src="/js/count.js"></script>
 
-</body><br>
-<br><br>
+        <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101311893);</script>
+        <script async src="/js/js.js"></script>
+        <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101311893ns.gif" /></p></noscript>
+    </body>
+
+    <script data-goatcounter="https://meh.goatcounter.com/count" async src="/js/count.js"></script>
+
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
+    <script async src="//static.getclicky.com/js"></script>
+<br>
+<br>
+<br>
 <br>
 如音频无法播放代表文件源已阵亡。请到<a href="https://github.com/Nathan903/WorshipDrumScores/issues"style="color:red;">这里</a>提交问题以帮助页面改进
 <br>
-last updated """)
+last updated """+str(datetime.datetime.now())+"</html>")
 
 template= ("""0<p id="$1" class="$2"><a href="#$3">$4</a><br>
 $5<audio controls loop controlsList="nodownload" preload="none">$6<source src="$7" type="audio/mpeg">$8404</audio>
@@ -69,6 +73,10 @@ $9</p>
 template1= ("""0<p id="$1"><a href="#$1">$2</a></p>
 $3<audio controls loop controlsList="nodownload" preload="auto" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
 $7<br>
+""")
+templatedev= ("""0<p id="$1" class="$2"><a href="#$3">$4</a><br>
+$5<audio controls loop controlsList="nodownload" preload="auto">$6<source src="$7" type="audio/mpeg">$8404</audio>
+$9</p>
 """)
 
 #http://stackoverflow.com/a/13752628/6762004

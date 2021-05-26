@@ -1,6 +1,5 @@
 import mytxt
 from mytxt import getInitial, rp
-import datetime
 import htmlmin
 #might need updates
 listsrc='musicsrc.txt'
@@ -103,8 +102,8 @@ namelist.sort(key = lambda x: x[0])
 hd=mytxt.head(otitle,"<h1>"+otitle+"</h1>", scorelink)
 
 #add heat to body, then add footer
-out=hd+out+mytxt.foot+str(datetime.datetime.now())
-out=htmlmin.minify(out+"</html>", remove_empty_space=True)
+out=hd+out+mytxt.foot
+out=htmlmin.minify(out, remove_empty_space=True)
 outputfile.write(out)
 outputfile.close()
 
