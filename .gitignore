@@ -17,3 +17,4 @@ local/
 docs/0music sharing site/src/*
 docs/docs/__pycache__/*
 docs/0music sharing site/zan/*
+docs/0music sharing site/pinyin-engine/node_modules/pinyin-engine/*
