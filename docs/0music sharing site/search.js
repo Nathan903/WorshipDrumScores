@@ -18,17 +18,17 @@ function hide() {
 	      	}
 	    }
 	}
-	console.log(n);
+	//console.log(n);
 	if (n==1){
 		for (i = 0; i < tr.length; i++) {
 			if (tr[i].style.display == ""){
-				console.log('loading'+tr[i].textContent);
+				//console.log('loading'+tr[i].textContent);
 				try{
-			      	console.log(tr[i].getElementsByTagName("audio")[0].preload)
+			      	//console.log(tr[i].getElementsByTagName("audio")[0].preload)
 			      	tr[i].getElementsByTagName("audio")[0].preload="auto";
 		    	}
 		    	catch{
-		      		console.log(tr[i])
+		      		//console.log(tr[i])
 				}
 			}
 		}
@@ -37,13 +37,13 @@ function hide() {
 	else if (n < 5){
 		for (i = 0; i < tr.length; i++) {
 			if (tr[i].style.display == ""){
-				console.log('loading'+tr[i].textContent);
+				//console.log('loading'+tr[i].textContent);
 				try{
-			      	console.log(tr[i].getElementsByTagName("audio")[0].preload)
+			      	//console.log(tr[i].getElementsByTagName("audio")[0].preload)
 			      	tr[i].getElementsByTagName("audio")[0].preload="metadata";
 		    	}
 		    	catch{
-		      		console.log(tr[i])
+		      		//console.log(tr[i])
 				}
 			}
 		}
@@ -60,7 +60,6 @@ if(location.href.includes("?"))
     document.getElementById("myInput").value = u;
     hide();
     document.title = document.getElementById(u).getElementsByTagName("a")[0].textContent.replace('敬拜', '敬█').replace('赞美', '赞█').replace('全能', '全█')
-
 }
 
 

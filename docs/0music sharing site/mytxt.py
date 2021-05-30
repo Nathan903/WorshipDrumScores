@@ -66,7 +66,7 @@ foot=("""
 <br>
 last updated """+str(datetime.datetime.now())+"</html>")
 
-template= ("""0<p id="$1" class="$2"><a href="#$3">$4</a><br>
+template= ("""0<p id="$1" class="$2"><a href="?search=$3">$4</a><br>
 $5<audio controls loop controlsList="nodownload" preload="none">$6<source src="$7" type="audio/mpeg">$8404</audio>
 $9</p>
 """)
@@ -74,7 +74,7 @@ template1= ("""0<p id="$1"><a href="#$1">$2</a></p>
 $3<audio controls loop controlsList="nodownload" preload="auto" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
 $7<br>
 """)
-templatedev= ("""0<p id="$1" class="$2"><a href="#$3">$4</a><br>
+templatedev= ("""0<p id="$1" class="$2"><a href="?search=$3">$4</a><br>
 $5<audio controls loop controlsList="nodownload" preload="auto">$6<source src="$7" type="audio/mpeg">$8404</audio>
 $9</p>
 """)

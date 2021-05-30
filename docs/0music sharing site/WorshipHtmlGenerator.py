@@ -84,7 +84,7 @@ def gen(template,outputfile_name, urltype, otitle,listsrc):
     for i in namelist:
         tableofcontent+=""" | <a onclick="r()" href=" """+urltype + i[0] + "\">" + i[1]+"</a>"
     tableofcontent+=" |"
-    hd+="""<br><input type="text" id="myInput" onkeyup="hide()" placeholder="输入拼音/首字母/中文，按enter搜索 （例：拣选 / jx / jianxuan）" title="Type in a name">"""
+    hd+="""<br><input type="text" id="myInput" onkeyup="hide()" placeholder="输入拼音/首字母/中文（例：拣选 / jx / jianxuan）" title="Type in a name">"""
 
     #add heat to body, then add footer
     out=hd+out+searchscript+tableofcontent+mytxt.foot
@@ -95,4 +95,4 @@ def gen(template,outputfile_name, urltype, otitle,listsrc):
 #gen(mytxt.template,"zan.html", "#","zan",'zan.txt')
 
 gen(mytxt.template,"index.html", "#","自由赞美 streaming",'musicsrc.txt')
-#gen(mytxt.templatedev,"dev.html", "?search=","自由赞美 streaming",'musicsrc.txt')
+gen(mytxt.templatedev,"dev.html", "?search=","自由赞美 streaming",'musicsrc.txt')
