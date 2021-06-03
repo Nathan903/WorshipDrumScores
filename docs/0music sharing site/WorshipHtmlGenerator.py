@@ -95,4 +95,4 @@ def gen(template,outputfile_name, urltype, otitle,listsrc):
 #gen(mytxt.template,"zan.html", "#","zan",'zan.txt')
 
 gen(mytxt.template,"index.html", "#","自由赞美 streaming",'musicsrc.txt')
-gen(mytxt.templatedev,"dev.html", "?search=","自由赞美 streaming",'musicsrc.txt')
+#gen(mytxt.templatedev,"dev.html", "?search=","自由赞美 streaming",'musicsrc.txt')
