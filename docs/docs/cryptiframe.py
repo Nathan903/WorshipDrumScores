@@ -4,9 +4,9 @@
 import htmlmin
 from pagecrypt import pagecrypt
 
-title = input("input title: ")
+title = input("input title（报告文档）: ")
 passwd = input("input passwd: ")
-hint = input("hint: ")
+hint = input("hint（为啥歌的英文名（小写）: ")
 link = input("input link: ")
 outputname=input('output file name: ')+".html"
 if outputname==".html":
