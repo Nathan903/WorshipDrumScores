@@ -7,8 +7,6 @@ on:
   pull_request:
     branches: [ master ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 
 jobs:
@@ -32,15 +30,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: see
       run: |
-        ls
-        cd '0music sharing site'
-        ls
-        pwd
-    - name: run
-      run: |
-        cd '0music sharing site'
-        ls
-        pwd
+        cd 'docs/0music sharing site'
         python 'WorshipHtmlGenerator.py'
     - name: Commit files
       id: commit
