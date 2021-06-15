@@ -5,8 +5,8 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '/docs/0music sharing site**'
-      - '/.github/workflows**' 
+      - 'docs/0music sharing site**'
+      - '.github/workflows**' 
 
     
 
