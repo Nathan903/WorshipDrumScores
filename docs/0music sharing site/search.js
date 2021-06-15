@@ -1,3 +1,4 @@
+
 function hide() {
   	var input, filter, table, tr, p, i, txtValue;
   	input = document.getElementById("myInput");
@@ -53,14 +54,21 @@ function hide() {
 function r() {
     document.getElementById("myInput").value=""
     hide()}
-    
-if(location.href.includes("?"))
+
+if(location.href.includes("%3E")||location.href.includes(">"))
+{
+    document.title = "歌单"
+    console.log(1);
+}
+else if(location.href.includes("?"))
 {
     var u = new URL(window.location.href).searchParams.get("search");
     document.getElementById("myInput").value = u;
     hide();
-    document.title = document.getElementById(u).getElementsByTagName("a")[0].textContent.replace('敬拜', '敬█').replace('赞美', '赞█').replace('全能', '全█')
+    document.title = document.getElementById(u).getElementsByTagName("a")[0].textContent.replace('敬拜', '敬█').replace('赞美', '赞█').replace('全能', '全█').replace('耶稣', '耶█').replace('基督', '█督').replace('约书亚', '约█亚')
 }
+
+
 
 
 //document.getElementById("myInput").value = location.href.substring(location.href.indexOf("?")+1);
