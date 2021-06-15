@@ -55,12 +55,12 @@ function r() {
     document.getElementById("myInput").value=""
     hide()}
 
-if(location.href.includes("%3E")||location.href.includes(">"))
+if(location.href.includes("\\")||location.href.includes(">"))
 {
     document.title = "歌单"
     console.log(1);
 }
-else if(location.href.includes("?"))
+if(location.href.includes("?"))
 {
     var u = new URL(window.location.href).searchParams.get("search");
     document.getElementById("myInput").value = u;
