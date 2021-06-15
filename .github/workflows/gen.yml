@@ -1,0 +1,44 @@
+name: Python package
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+        architecture: x64
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pytest pypinyin zhon htmlmin zhconv requests
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: see
+      run: |
+        cd 'docs/0music sharing site'
+        python 'WorshipHtmlGenerator.py'
+    - name: Commit files
+      id: commit
+      run: |
+        git add index.html
+        git config --global user.name 'Your Name'
+        git config --global user.email 'your-username@users.noreply.github.com'
+        git commit -am "Automated generated index.html by GitHub Action"
+        git push
