@@ -30,9 +30,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest pypinyin zhon htmlmin zhconv requests
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: see
+      run: |
+        ls
+        cd '0music sharing site'
+        ls
+        pwd
     - name: run
       run: |
-        pwd
         cd '0music sharing site'
         ls
         pwd
