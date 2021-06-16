@@ -33,6 +33,7 @@ jobs:
       shell: cmd
     - name: commit file
       run: |
+        cd docs/blog/2021/0122
         dir
         git add *
         git config --global user.name 'GitHub action bot'
