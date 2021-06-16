@@ -33,7 +33,7 @@ jobs:
         sudo apt install poppler-utils
     - name: see
       run: |
-        pdftohtml -c t.pdf thtml
+        pdftohtml -c t.pdf t.html
         git add t.html
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
