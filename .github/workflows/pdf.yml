@@ -24,10 +24,12 @@ jobs:
         cd pdftest
         ls
         start pdf2htmlEX.exe --embed cfijo --dest-dir svg  --optimize-text 1 --bg-format svg t.pdf
+        dir
+      shell: cmd
+    - name: commit file
+        ls
         git add *
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
         git commit -am "Automated generated index.html by GitHub Action"
         git push
-      shell: cmd
-
