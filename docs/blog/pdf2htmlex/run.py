@@ -58,7 +58,7 @@ else:
     date=getLastFriday()
     title=checkbadseperators(name)
 
-print(prettyDate(date)+" | "+title)
+#print(prettyDate(date)+" | "+title)
 print("../"+year+"/"+date)
 if os.path.isdir("../"+year+"/"+date):
     print("ERROR: folder already exist")
