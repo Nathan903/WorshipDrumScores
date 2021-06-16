@@ -7,23 +7,20 @@ on:
     paths:
       - 'docs/blog**'
       - '.github/workflows/pdf.yml' 
-
-    
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     steps:
     - uses: actions/checkout@v2
     - name: run 
       run: |
         cd pdftest
         ls
-        sh pdf2htmlEX.sh
+        pdf2htmlEX --embed cfijo --dest-dir svg  --optimize-text 1 --bg-format svg t.pdf
         git add *
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'

@@ -58,7 +58,7 @@ def gen(template,outputfile_name, urltype, otitle,listsrc):
                 lastLineIsSrc=False
             #append if line does not contain extension of codec
             elif not(any(e in line.strip() for e in codeclist) or "http" in line.strip()):
-                w=tlist[0]+getInitial(line.strip())[0]+tlist[1]+getInitial(line.strip())[2]+tlist[2]+getInitial(line.strip())[0]+tlist[3]+line.strip()+tlist[4]
+                w=tlist[0]+getInitial(line.strip())[0]+tlist[1]+getInitial(line.strip())[2]+tlist[2]+getInitial(line.strip())[0]+tlist[3]+line.strip().replace("\\","")+tlist[4]
                 namelist.append(getInitial(line.strip()))
                 if lastLineIsSrc:
                     w=tlist[8]+w

@@ -113,7 +113,11 @@ def getInitial(inputString):
         if(len(l2)>1 and len(l2[0])<2 and len(l2[0])<len(l2[1])):
             l = ("".join(l2[0:2])).translate(str.maketrans('','',string.punctuation))
         l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
-        return ([strip_emoji("".join(i[0] for i in pinyin(l, style=Style.FIRST_LETTER, strict=False, errors='ignore'))), l, strip_emoji("".join(lazy_pinyin(l, strict=False, errors='ignore')))])
+
+        classl=strip_emoji("".join(lazy_pinyin(l, strict=False, errors='ignore')))
+        if "\\" in inputString:
+            classl+="\\"
+        return ([strip_emoji("".join(i[0] for i in pinyin(l, style=Style.FIRST_LETTER, strict=False, errors='ignore'))), l, classl])
     else:
         l1 = inputString.split("(")
         l11 = l1[0].split("（")

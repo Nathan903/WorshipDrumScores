@@ -1,4 +1,10 @@
-#higher links are used as default
+#Config file for WorshipHtmlGenerator.py
+
+#tips:
+#		higher links are used as default, links below the first one are backups
+#		add a "#" to comment out a line
+# 		add a "\" to song names to put them on the list @ https://praise.pages.dev?search=\
+
 <h3><p>2021歌单25首：</p></h3>
 
 行神迹的神 (赞美之泉)
@@ -326,13 +332,13 @@ https://play.zanmeishi.com/song/p/28231.mp3
 新酒 （约书亚乐团）
 https://play.zanmeishi.com/song/p/7940.mp3
 
-前来敬拜 (赞美之泉)
+前来敬拜 (赞美之泉) \
 /mp3/qljb.mp3
 
-耶稣基督 (约书亚乐团)
+耶稣基督 (约书亚乐团) \
 https://play.zanmeishi.com/song/p/23935.mp3
 
-一生一世 (我心旋律)
+一生一世 (我心旋律) \
 https://play.zanmeishi.com/song/p/11393.mp3
 
 #<small style="color:#d7d7d7; text-align:right;"> 🍉 <i>and</i> 🍄 <i>are best friends</i></small>
