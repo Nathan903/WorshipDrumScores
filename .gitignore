@@ -9,6 +9,7 @@
 */0*.pdf
 0*.pdf
 !/docs/blog/pdf2htmlex/*
+!/docs/blog/*.pdf
 0*.mp3
 */0*.mp3
 !/docs/*.mp4
