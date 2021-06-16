@@ -16,6 +16,9 @@ jobs:
     runs-on: windows-2019
     steps:
     - uses: actions/checkout@v2
+    - name: show path
+      run: echo %PATH%
+      shell: cmd
     - name: run 
       run: |
         cd pdftest
@@ -26,5 +29,5 @@ jobs:
         git config --global user.email 'your-username@users.noreply.github.com'
         git commit -am "Automated generated index.html by GitHub Action"
         git push
-
+      shell: cmd
 
