@@ -73,7 +73,7 @@ subprocess.run(cmd)
 newpath="../"+year+"/"+date+"/"+fname
 copyfile(fname, str(newpath))
 
-newpath="../"+year+"/"+date+"/"+fname+".pdf"
+newpath="../"+year+"/"+date+"/"+"光盐报刊3.5.pdf"
 copyfile(fname, str(newpath))
 os.remove(fname)
 os.remove("temp.pdf")
