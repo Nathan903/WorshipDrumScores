@@ -44,7 +44,7 @@ fname = str(files[0])
 if fname[0]==" ":
     fname = str(files[0]).strip()
     print("warning: space infront of file.")
-    print(fname)
+    #print(fname)
 
 name = fname.replace(".pdf","")
 
@@ -54,7 +54,7 @@ if fname[4]==" " and name[0:4].isnumeric() and int(name[0:4])<1232:
     title = name[4+1:]
 else:
     print("warning: cannot find date, using auto date function: "+ getLastFriday())
-    print(fname)
+    #print(fname)
     date=getLastFriday()
     title=checkbadseperators(name)
 
@@ -67,7 +67,7 @@ if os.path.isdir("../"+year+"/"+date):
 
 copyfile(fname, "temp.pdf")
 
-cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format svg temp.pdf index.html"
+cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format svg --zoom 1.6 temp.pdf index.html"
 subprocess.run(cmd)
 
 shutil.move(fname, "../"+year+"/"+date+"/"+fname)
