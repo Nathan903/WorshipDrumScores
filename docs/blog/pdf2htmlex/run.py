@@ -71,23 +71,10 @@ cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format 
 subprocess.run(cmd)
 
 copyfile(fname, Path("../"+year+"/"+date+"/"+fname))
-copyfile(fname, Path("../"+year+"/"+date+"/temp"))
-os.rename("../"+year+"/"+date+"/temp", str("../"+year+"/"+date+fname+".pdf"))
 os.remove(fname)
 os.remove("temp.pdf")
 
-
-def read_text_file(file_path):
-    with open(file_path, 'r', encoding="utf-8") as f:
-        lines = f.readlines()
-    with open(file_path, 'w', encoding="utf-8") as f:
-        for l in lines:
-            if  ("</title>" in l):
-                f.write("<title>"+prettyDate(date)+" | "+title+"</title>")
-            else:
-                f.write(l)
-read_text_file("../"+year+"/"+date+"/index.html")
-"""
+body = """
         <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101311893);</script>
         <script async src="/js/js.js"></script>
         <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101311893ns.gif" /></p></noscript>
@@ -97,3 +84,17 @@ read_text_file("../"+year+"/"+date+"/index.html")
 
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316586);</script>
     <script async src="//static.getclicky.com/js"></script>"""
+
+def read_text_file(file_path):
+    with open(file_path, 'r', encoding="utf-8") as f:
+        lines = f.readlines()
+    with open(file_path, 'w', encoding="utf-8") as f:
+        for l in lines:
+            if  ("</title>" in l):
+                f.write("<title>"+prettyDate(date)+" | "+title+"</title>")
+            elif ("</body>" in l):
+                f.write(body)
+            else:
+                f.write(l)
+read_text_file("../"+year+"/"+date+"/index.html")
+
