@@ -17,27 +17,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.7]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.7
-        architecture: x64
-    - name: Install dependencies
-      run: |
-        sudo apt install poppler-utils
-    - name: see
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+    - run: npm install -g cloudconvert-cli
+    - name: run 
       run: |
         cd pdftest
-        pdftohtml -c t.pdf t.html
         ls
+        cloudconvert convert -f html t.pdf
         git add *
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
         git commit -am "Automated generated index.html by GitHub Action"
         git push
+
+
