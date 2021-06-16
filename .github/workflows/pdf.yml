@@ -27,6 +27,7 @@ jobs:
         dir
       shell: cmd
     - name: commit file
+      run: |
         ls
         git add *
         git config --global user.name 'Your Name'
