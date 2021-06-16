@@ -67,10 +67,14 @@ if os.path.isdir("../"+year+"/"+date):
 
 copyfile(fname, "temp.pdf")
 
-cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format svg --zoom 1.6 temp.pdf index.html"
+cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format svg --fit-width 960 temp.pdf index.html"
 subprocess.run(cmd)
 
-copyfile(fname, "../"+year+"/"+date+"/"+fname)
+newpath="../"+year+"/"+date+"/"+fname
+copyfile(fname, str(newpath))
+
+newpath="../"+year+"/"+date+"/"+fname+".pdf"
+copyfile(fname, str(newpath))
 os.remove(fname)
 os.remove("temp.pdf")
 
