@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'docs/0music sharing site**'
+      - 'docs/0music sharing site/musicsrc.txt'
       - '.github/workflows/gen.yml' 
 
     
