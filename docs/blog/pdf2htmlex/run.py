@@ -70,11 +70,9 @@ copyfile(fname, "temp.pdf")
 cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format svg --fit-width 960 temp.pdf index.html"
 subprocess.run(cmd)
 
-newpath="../"+year+"/"+date+"/"+fname
-copyfile(fname, str(newpath))
+newpath="../"+year+"/"+date+"/"+fname.replace(" ", " ")
+copyfile(fname, Path(newpath))
 
-newpath="../"+year+"/"+date+"/"+"光盐报刊3.5.pdf"
-copyfile(fname, str(newpath))
 os.remove(fname)
 os.remove("temp.pdf")
 
