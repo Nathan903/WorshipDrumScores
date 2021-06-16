@@ -20,7 +20,7 @@ jobs:
       run: |
         cd pdftest
         ls
-        pdf2htmlEX --embed cfijo --dest-dir svg  --optimize-text 1 --bg-format svg t.pdf
+        pdf2htmlEX.exe --embed cfijo --dest-dir svg  --optimize-text 1 --bg-format svg t.pdf
         git add *
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
