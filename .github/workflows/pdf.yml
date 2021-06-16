@@ -33,8 +33,10 @@ jobs:
         sudo apt install poppler-utils
     - name: see
       run: |
+        cd pdftest
         pdftohtml -c t.pdf t.html
-        git add t.html
+        ls
+        git add *
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
         git commit -am "Automated generated index.html by GitHub Action"
