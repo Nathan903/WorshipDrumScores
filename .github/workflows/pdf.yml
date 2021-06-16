@@ -36,6 +36,6 @@ jobs:
         dir
         git add *
         git config --global user.name 'GitHub action bot'
-        git config --global user.email 'your-username@users.noreply.github.com'
+        git config --global user.email 'bot@users.noreply.github.com'
         git commit -am "Auto convert PDF2HTML by GitHub Action"
         git push

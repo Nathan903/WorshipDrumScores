@@ -66,16 +66,22 @@ if os.path.isdir("../"+year+"/"+date):
     boom
 
 copyfile(fname, "temp.pdf")
-
+path="../"+year+"/"+date
 cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format svg --fit-width 960 temp.pdf index.html"
 subprocess.run(cmd)
-
+os.listdir(path)
 newpath="../"+year+"/"+date+"/"+fname.replace(" ", "")
 copyfile(fname, Path(newpath))
 newpath="../"+year+"/"+date+"/temp.pdf"
 newpath1="../"+year+"/"+date+"/"+fname
 copyfile(fname, Path(newpath))
 os.rename(newpath, newpath1)
+os.listdir(path)
+newpath="../"+year+"/"+date+"/"+"0122 马太福音11章"
+copyfile(fname, Path(newpath))
+newpath="../"+year+"/"+date+"/0122马太福音11章"
+copyfile(fname, Path(newpath))
+
 os.remove(fname)
 os.remove("temp.pdf")
 
