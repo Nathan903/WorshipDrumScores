@@ -30,7 +30,7 @@ jobs:
         architecture: x64
     - name: Install dependencies
       run: |
-        sudo aptitude install poppler-utils
+        sudo apt install poppler-utils
     - name: see
       run: |
         pdftohtml -c t.pdf thtml
