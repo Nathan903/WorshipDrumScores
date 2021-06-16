@@ -71,6 +71,8 @@ cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format 
 subprocess.run(cmd)
 
 copyfile(fname, Path("../"+year+"/"+date+"/"+fname))
+copyfile(fname, Path("../"+year+"/"+date+"/temp"))
+os.rename("../"+year+"/"+date+"/temp", str("../"+year+"/"+date+fname+".pdf"))
 os.remove(fname)
 os.remove("temp.pdf")
 
