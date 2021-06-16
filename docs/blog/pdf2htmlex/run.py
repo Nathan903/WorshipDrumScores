@@ -70,8 +70,8 @@ copyfile(fname, "temp.pdf")
 cmd = "pdf2htmlEX.exe --embed cfijo --dest-dir ../"+year+"/"+date+" --bg-format svg --zoom 1.6 temp.pdf index.html"
 subprocess.run(cmd)
 
-copyfile(fname, "../"+year+"/"+date+"/"+ "是.pdf")
-shutil.move(fname, "../"+year+"/"+date+"/"+fname)
+copyfile(fname, "../"+year+"/"+date+"/"+fname)
+os.remove(fname)
 os.remove("temp.pdf")
 
 

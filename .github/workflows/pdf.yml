@@ -29,6 +29,7 @@ jobs:
         cd docs/blog/pdf2htmlex
         dir
         python run.py
+        dir
       shell: cmd
     - name: commit file
       run: |
