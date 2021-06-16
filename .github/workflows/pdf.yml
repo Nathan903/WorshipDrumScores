@@ -35,6 +35,7 @@ jobs:
       run: |
         cd docs/blog/2021/0122
         dir
+        git add 0122 马太福音11章.pdf
         git add *
         git config --global user.name 'GitHub action bot'
         git config --global user.email 'bot@users.noreply.github.com'
