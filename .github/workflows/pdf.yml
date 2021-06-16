@@ -19,16 +19,20 @@ jobs:
     - name: show path
       run: echo %PATH%
       shell: cmd
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+        architecture: x64
     - name: run 
       run: |
-        cd pdftest
-        ls
-        start pdf2htmlEX.exe --embed cfijo --dest-dir svg  --optimize-text 1 --bg-format svg t.pdf
+        cd docs/blog/pdf2htmlex
         dir
+        python run.py
       shell: cmd
     - name: commit file
       run: |
-        ls
+        dir
         git add *
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
