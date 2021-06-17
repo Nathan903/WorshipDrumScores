@@ -98,6 +98,10 @@ def read_text_file(file_path):
                 f.write(l)
 read_text_file("../"+year+"/"+date+"/index.html")
 
-
-with open("https://praise.pages.dev/blog/"+year+"/"+date, 'w', encoding="utf-8") as f:
-    f.write("https://praise.pages.dev/blog/"+year+"/"+date)
+files = [x for x in Path().rglob('*链接.txt')]
+if len(files)>0:
+    fname = str(files[0])
+    os.remove(fname)
+uuu="https://praise.pages.dev/blog/"+year+"/"+date
+with open(date+"链接.txt", 'w', encoding="utf-8") as f:
+    f.write(uuu)
