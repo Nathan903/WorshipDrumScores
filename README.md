@@ -6,6 +6,8 @@ i = video of sheet only
 j = jpg pics not made into pdf yet  
 src: source files, no longer needed. 
 
+## Upload PDF
+https://github.com/Nathan903/WorshipDrumScores/tree/main/docs/blog/pdf2htmlex
 
 ## Useful links:
 	https://bigjpg.com/
