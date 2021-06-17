@@ -115,7 +115,6 @@ ttt=template.replace("$fname$",fname).replace("$date$",prettyDate(date)+" "+time
 with open("readme.md", 'r', encoding="utf-8") as f:
     lines = f.readlines()
     lines[0]=ttt
-print(lines)
 with open("readme.md", 'w', encoding="utf-8") as f:
     f.writelines(lines)
-print(ttt)
+print("DONE####")
