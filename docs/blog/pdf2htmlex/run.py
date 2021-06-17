@@ -98,3 +98,6 @@ def read_text_file(file_path):
                 f.write(l)
 read_text_file("../"+year+"/"+date+"/index.html")
 
+
+with open("https://praise.pages.dev/blog/"+year+"/"+date, 'w', encoding="utf-8") as f:
+    f.write("https://praise.pages.dev/blog/"+year+"/"+date)
