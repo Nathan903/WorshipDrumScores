@@ -107,11 +107,11 @@ if len(files)>0:
 uuu="https://praise.pages.dev/blog/"+year+"/"+date
 with open(date+"链接.txt", 'w', encoding="utf-8") as f:
     f.write(uuu)
-
-timenow=datetime.datetime.now().replace(tzinfo=timezone.utc).strftime("%H:%M")
-timethen=(datetime.datetime.now().replace(tzinfo=timezone.utc)+ datetime.timedelta(0,240)).strftime("%H:%M")
+timedate =(datetime.datetime.now().replace(tzinfo=timezone.utc)+ datetime.timedelta(0,28,800‬)).strftime("%m%d")
+timenow=(datetime.datetime.now().replace(tzinfo=timezone.utc)+ datetime.timedelta(0,28,800‬)).strftime("%H:%M")
+timethen=(datetime.datetime.now().replace(tzinfo=timezone.utc)+ datetime.timedelta(0,28,800‬+240)).strftime("%H:%M")
 template = """_📢 `$fname$` 于 $date$上传成功！链接将在$then$生效：https://praise.pages.dev/blog/2021/$mmdd$_ \n"""
-ttt=template.replace("$fname$",fname).replace("$date$",prettyDate(date)+" "+timenow).replace("$then$",timethen).replace("$mmdd$",date)
+ttt=template.replace("$fname$",fname).replace("$date$",prettyDate(timedate)+" "+timenow).replace("$then$",timethen).replace("$mmdd$",date)
 with open("readme.md", 'r', encoding="utf-8") as f:
     lines = f.readlines()
     lines[0]=ttt
