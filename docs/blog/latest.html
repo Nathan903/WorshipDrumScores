@@ -45,7 +45,7 @@
 	// the object request will be actually modified
 	console.log(1)
 	if (request.status === 404) {
-    	document.getElementById("p").innerHTML = "⚠️"+pr(lastFriday.getMonth()+1)+pr(lastFriday.getDate())+"的报刊不存在";
+    	document.getElementById("p").innerHTML = "⚠️"+lastFriday.getFullYear()+"/"+(lastFriday.getMonth()+1)+"/"+pr(lastFriday.getDate())+"的报刊不存在";
 	}
 	else{
 		window.location.href=b;
