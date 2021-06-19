@@ -123,7 +123,10 @@ def getInitial(inputString):
         l11 = l1[0].split("（")
         l = l11[0].translate(str.maketrans('','',string.punctuation))
         l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
-        return ([strip_emoji(l.replace(" ","").lower()), l, ''])
+        classl=""
+        if "\\" in inputString:
+            classl+="\\"
+        return ([strip_emoji(l.replace(" ","").lower()), l, classl])
 
 def minifyjs(fname):
     import requests
