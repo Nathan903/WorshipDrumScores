@@ -14,8 +14,7 @@ __`MMDD 有力的标题！.pdf`__
 # 上传4步：
  0. 确认你有登录GitHub
  1. 将PDF命名为`MMDD 标题.pdf`
- 2. 上传PDF（将PDF拖拽到网页中 或 点`Add file` - `Upload files`  
+ 2. 👉 [点我上传PDF](https://github.com/Nathan903/WorshipDrumScores/upload/main/docs/blog/pdf2htmlex) 👈  
   2.1 确认上传（点`Commit changes`）
- 3. 等4分钟（去上个厕所）
+ 3. 等4分钟
  4. 在最上面📢复制链接分享
-
