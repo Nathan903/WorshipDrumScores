@@ -8,13 +8,14 @@
 <body>
 	<p id=p>正在跳转至本周报刊...</p>
 <script type="text/javascript">
-	let diff = ["x",3,4,5,6,7,1,2];
+	let diff = [2,3,4,5,6,7,1];
 	today = new Date();
 	console.log(today);
 
-	var lastFriday = today;
+	const lastFriday = today;
 	lastFriday.setDate(today.getDate()-diff[today.getDay()]);
-	
+	console.log(lastFriday);
+
 	function pr(i){
 		if(i<10){
 			return("0"+i)
@@ -22,7 +23,7 @@
 		return(""+i)
 	}
 	document.getElementsByTagName("body")[0]=1
-	console.log(lastFriday);
+	
 	var b="https://praise.pages.dev/blog/"+lastFriday.getFullYear()+"/"+pr(lastFriday.getMonth()+1)+pr(lastFriday.getDate())
 	console.log(b);
 
