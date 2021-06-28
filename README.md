@@ -13,6 +13,8 @@ https://github.com/Nathan903/WorshipDrumScores/tree/main/docs/blog/pdf2htmlex
 	https://bigjpg.com/
 	https://drumbit.app/
 	http://www.tabscroller.com/
+	https://melody.ml
+	https://whatang.org/
 	
 ## Awesome links (that are just like this site)
 	http://worshipdrumtranscription.com/
