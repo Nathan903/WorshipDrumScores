@@ -8,16 +8,16 @@
 \header {
   title = "神羔羊配得"
   tagline = \markup{
-  	\abs-fontsize #7
-  		{
-  			"Created using DrumBurp & Lilypond."
-  				{
-  				Copyleft (ɔ) 2021 
-  				\override #'(font-name . "Segoe UI Emoji")
-		        "🥝."
-		        } 
-		  	"Freely distributed under the GNU Free Documentation License."
-  		}
+    \abs-fontsize #7
+    {
+      "Created using DrumBurp & Lilypond."
+      {
+        Copyleft (ɔ) 2021 
+        \override #'(font-name . "Segoe UI Emoji")
+        "🥝."
+      } 
+    "Freely distributed under the Creative Commons Attribution-ShareAlike 4.0 License."
+    }
   }
 
   composer = "约书亚乐团"

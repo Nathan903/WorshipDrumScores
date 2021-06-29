@@ -16,7 +16,7 @@ tagline = \markup{
           \override #'(font-name . "Segoe UI Emoji")
             "🥝."
             } 
-        "Freely distributed under the GNU Free Documentation License."
+        "Freely distributed under the Creative Commons Attribution-ShareAlike 4.0 License."
       }
   }  composer = "约书亚"
 
