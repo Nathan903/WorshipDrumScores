@@ -64,7 +64,9 @@ foot=("""
 <br>
 如音频无法播放代表文件源已阵亡。请到<a href="https://github.com/Nathan903/WorshipDrumScores/issues"style="color:red;">这里</a>提交问题以帮助页面改进
 <br>
-last updated """+str(datetime.datetime.now())+"</html>")
+last updated """+str(datetime.datetime.now())+"""
+<link rel="dns-prefetch" href="https://god7777777.com/">
+</html>""")
 
 template= ("""0<p id="$1" class="$2"><a href="?search=$3">$4</a><br>
 $5<audio controls loop controlsList="nodownload" preload="none">$6<source src="$7" type="audio/mpeg">$8404</audio>
