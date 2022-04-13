@@ -66,12 +66,32 @@ foot=("""
 <br>
 last updated """+str(datetime.datetime.now())+"""
 <link rel="dns-prefetch" href="https://god7777777.com/">
+
+
+<script type="text/javascript">
+//auto stopping simultaneous playing
+window.addEventListener('load', function(event){
+document.querySelectorAll("audio").forEach((el) => {
+    el.onplay = function(e){
+	// pause all the videos except the current.
+	document.querySelectorAll(".inlineVideo").forEach((el1) => {
+	    if(el === el1)
+		el1.play();
+	    else
+		el1.pause();
+	});
+    }
+});
+});
+</script>
 </html>""")
 
 template= ("""0<p id="$1" class="$2"><a href="?search=$3">$4</a><br>
 $5<audio controls loop controlsList="nodownload" preload="none">$6<source src="$7" type="audio/mpeg">$8404</audio>
 $9</p>
 """)
+
+#legacy: 
 template1= ("""0<p id="$1"><a href="#$1">$2</a></p>
 $3<audio controls loop controlsList="nodownload" preload="auto" style="width: 90%;">$4<source src="$5" type="audio/mpeg">$6404</audio>
 $7<br>
