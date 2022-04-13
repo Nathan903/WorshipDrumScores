@@ -6,6 +6,7 @@ on:
     branches: [ main ]
     paths:
       - 'docs/0music sharing site/musicsrc.txt'
+      - 'docs/0music sharing site/*.py'
       - '.github/workflows/gen.yml' 
 
     
