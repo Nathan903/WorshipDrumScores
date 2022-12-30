@@ -119,9 +119,10 @@ with open(date+"链接.txt", 'w', encoding="utf-8") as f:
 
 
 timedate =(now ).strftime("%m%d")
+timeyear=(now).strftime("%Y")
 timenow=(now).strftime("%H:%M")
 timethen=(now+ datetime.timedelta(0,240) ).strftime("%H:%M")
-template = """_📢 `$fname$` 于 $date$上传成功！链接将在$then$生效：https://praise.pages.dev/blog/2021/$mmdd$_ \n"""
+template = f"""_📢 `$fname$` 于 $date$上传成功！链接将在$then$生效：https://praise.pages.dev/blog/{timeyear}/$mmdd$_ \n"""
 ttt=template.replace("$fname$",fname).replace("$date$",prettyDate(timedate)+" "+timenow).replace("$then$",timethen).replace("$mmdd$",date)
 with open("readme.md", 'r', encoding="utf-8") as f:
     lines = f.readlines()
