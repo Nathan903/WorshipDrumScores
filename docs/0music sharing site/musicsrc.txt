@@ -557,6 +557,12 @@ How great is our God \ㅤ
 信靠顺服 \ㅤ
 /mp3/xksf.mp3
 
+Battle Belongs
+/mp3/battlebelongs.mp3
+
+Hymn Of Heaven
+/mp3/hymnofheaven.mp3
+
 #<small style="color:#d7d7d7; text-align:right;"> 🍉 <i>and</i> 🍄 <i>are best friends</i></small>
 #<small style="color:#d7d7d7; text-align:right;"> 🦊<i> likes to eat </i>🍃</small>
 #<small style="color:#d7d7d7; text-align:right;"> 🍉<i> lives in a </i>🚢</small>
