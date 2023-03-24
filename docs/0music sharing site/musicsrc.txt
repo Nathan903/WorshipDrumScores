@@ -46,16 +46,19 @@ https://mp3.9ku.com/mp3/543/542903.mp3
 #https://mp3.9ku.com/mp3/543/542989.mp3
 
 无价至宝 (乔舒亚)
-https://play.readbible.cn/song/p/15715.mp3
+/mp3/wjzb.mp3
+#https://play.readbible.cn/song/p/15715.mp3
 
 我们欢迎君王降临 (赞美之泉)
 https://god7777777.com/shige/zmzq2/zlyry/08%E6%88%91%E4%BB%AC%E6%AC%A2%E8%BF%8E%E5%90%9B%E7%8E%8B%E9%99%8D%E4%B8%B4.mp3
 
 和散那
-https://play.readbible.cn/song/p/13964.mp3
+/mp3/hsn_ysy.mp3
+#https://play.readbible.cn/song/p/13964.mp3
 
 每当我瞻仰你
-https://play.readbible.cn/song/p/32383.mp3
+/mp3/mdwzym.mp3
+#https://play.readbible.cn/song/p/32383.mp3
 #https://weworshipshh.com/mp3/06_MD_%E6%AF%8F%E7%95%B6%E6%88%91%E7%9E%BB%E4%BB%B0%E7%A5%A2.mp3
 #different version
 
@@ -89,7 +92,8 @@ https://play.readbible.cn/song/p/23330.mp3
 /mp3/dgddj.mp3
 
 翻转的神迹 (生命河)
-https://play.readbible.cn/song/p/35399.mp3
+/mp3/fzdsj.mp3
+#https://play.readbible.cn/song/p/35399.mp3
 
 新的异象，新的方向 (赞美之泉)
 https://god7777777.com/Uploads/Music/2018-03-18/5aae55f6caae9.mp3
@@ -108,25 +112,12 @@ https://god7777777.com/Uploads/Music/2018-03-18/5aae55f6caae9.mp3
 <hr>
 <h3><p>新歌：</p></h3>
 
-甦醒 Wake (演唱-璽恩)
-https://play.readbible.cn/song/p/23934.mp3
-#https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
-#https://t.tehc.workers.dev/-----https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
-
-就是现在（约书亚乐团）
-https://play.readbible.cn/song/p/23938.mp3
-
-神伟大的舞池（约书亚乐团）
-https://play.readbible.cn/song/p/23933.mp3
-
 大能拯救 \ㅤ
-https://play.readbible.cn/song/p/15789.mp3
+/mp3/dnzj.mp3
+#https://play.readbible.cn/song/p/15789.mp3
 
 你施恩
 https://play.readbible.cn/song/p/40881.mp3
-
-坚强的爱
-https://play.readbible.cn/song/p/23927.mp3
 
 我的救赎者活着
 /mp3/wdjszhz.mp3
@@ -220,54 +211,54 @@ Happy Day_中文版
 https://play.readbible.cn/song/p/13961.mp3
 
 恩典之流
-https://play.readbible.cn/song/p/15192.mp3
+/mp3/edzl.mp3
+#https://play.readbible.cn/song/p/15192.mp3
 
 Happy Day
 #http://hbb.vpaccapital.com:2/api/public/dl/GV5KaszU
-https://play.readbible.cn/song/p/8471.mp3
-#/mp3/hnb (1).mp3
-https://play.readbible.cn/song/p/31317.mp3
+#https://play.readbible.cn/song/p/8471.mp3
+/mp3/hnb (1).mp3
+#https://play.readbible.cn/song/p/31317.mp3
 
 The Highest And Greatest
-#/mp3/hnb (2).mp3
-https://play.readbible.cn/song/p/8472.mp3
+/mp3/hnb (2).mp3
+#https://play.readbible.cn/song/p/8472.mp3
 
 Everything
-#/mp3/hnb (3).mp3
-https://play.readbible.cn/song/p/8473.mp3
-
+/mp3/hnb (3).mp3
+#https://play.readbible.cn/song/p/8473.mp3
 
 Holding Nothing Back
-#/mp3/hnb (4).mp3
-https://play.readbible.cn/song/p/8474.mp3
+/mp3/hnb (4).mp3
+#https://play.readbible.cn/song/p/8474.mp3
 
 Clinging To The Cross
-#/mp3/hnb (5).mp3
-https://play.readbible.cn/song/p/8475.mp3
+/mp3/hnb (5).mp3
+#https://play.readbible.cn/song/p/8475.mp3
 
 Almighty God
-#/mp3/hnb (6).mp3
-https://play.readbible.cn/song/p/8476.mp3
+/mp3/hnb (6).mp3
+#https://play.readbible.cn/song/p/8476.mp3
 
 God Of Justice
-#/mp3/hnb (7).mp3
-https://play.readbible.cn/song/p/8477.mp3
+/mp3/hnb (7).mp3
+#https://play.readbible.cn/song/p/8477.mp3
 
 Out Of The Darkness
-#/mp3/hnb (8).mp3
-https://play.readbible.cn/song/p/8478.mp3
+/mp3/hnb (8).mp3
+#https://play.readbible.cn/song/p/8478.mp3
 
 Center Of It All
-#/mp3/hnb (9).mp3
-https://play.readbible.cn/song/p/8479.mp3
+/mp3/hnb (9).mp3
+#https://play.readbible.cn/song/p/8479.mp3
 
 Living For Your Glory
-#/mp3/hnb (10).mp3
-https://play.readbible.cn/song/p/8480.mp3
+/mp3/hnb (10).mp3
+#https://play.readbible.cn/song/p/8480.mp3
 
 Take The World
-#/mp3/hnb (11).mp3
-https://play.readbible.cn/song/p/8481.mp3
+/mp3/hnb (11).mp3
+#https://play.readbible.cn/song/p/8481.mp3
 
 日日夜夜
 /mp3/rryy.mp3
@@ -284,7 +275,8 @@ https://god7777777.com/Uploads/Music/2019-10-27/5db5bbf48aeb7.mp3
 ###
 
 成为神迹的器皿
-https://play.readbible.cn/song/p/13698.mp3
+/mp3/cwsjdqm.mp3
+#https://play.readbible.cn/song/p/13698.mp3
 #https://weworshipshh.com//mp3/03%20%E6%88%90%E7%82%BA%E7%A5%9E%E8%B9%9F%E7%9A%84%E5%99%A8%E7%9A%BF.mp3
 
 尊贵全能神（尊贵耶和华）
@@ -292,12 +284,14 @@ https://play.readbible.cn/song/p/13698.mp3
 #http://mp3.jidujiao.com/zanmeizhiquan/%E5%B0%8A%E8%B4%B5%E5%85%A8%E8%83%BD%E7%A5%9E.mp3
 
 住在你里面
-https://god7777777.com//mupfile/2011/10/14/111739301.mp3
+/mp3/zznlm.mp3
+#https://god7777777.com//mupfile/2011/10/14/111739301.mp3
 #http://mp3.jidujiao.com/zanmeizhiquan/%E4%BD%8F%E5%9C%A8%E4%BD%A0%E9%87%8C%E9%9D%A2.mp3
 #https://t.tehc.workers.dev/-----http://mp3.jidujiao.com/zanmeizhiquan/%E4%BD%8F%E5%9C%A8%E4%BD%A0%E9%87%8C%E9%9D%A2.mp3
 
 你是配得
-https://god7777777.com//mupfile/2011/10/14/112445804.mp3
+/mp3/nspd.mp3
+#https://god7777777.com//mupfile/2011/10/14/112445804.mp3
 #http://mp3.jidujiao.com/zanmeizhiquan/%E4%BD%A0%E6%98%AF%E9%85%8D%E5%BE%97.mp3
 #https://1.praise.workers.dev/-----http://mp3.jidujiao.com/zanmeizhiquan/%E4%BD%A0%E6%98%AF%E9%85%8D%E5%BE%97.mp3
 
@@ -309,28 +303,29 @@ https://god7777777.com//mupfile/2011/10/14/113103842.mp3
 https://mp32.9ku.com/upload/128/2018/02/24/876058.mp3
 
 我献上赞美
-https://play.readbible.cn/song/p/6385.mp3
+https://file3.yueka.com/api/music/2019/07/01/1561974834939858331.mp3
+#https://play.readbible.cn/song/p/6385.mp3
 #https://mp3.9ku.com/mp3/518/517060.mp3
 #http://god7777777.com/shige/%E7%BA%A6%E4%B9%A6%E4%BA%9A%E6%95%AC%E6%8B%9C/%E4%BB%96%E7%9A%84%E5%9B%BD%E5%BA%A6%EF%BC%8C%E4%BB%96%E7%9A%84%E8%8D%A3%E8%80%80/%E6%88%91%E7%8C%AE%E4%B8%8A%E8%B5%9E%E7%BE%8E.mp3
 
 主我献上生命给你 
 https://play.readbible.cn/song/p/6384.mp3
 
-祢是快来君王
-https://play.readbible.cn/song/p/28939.mp3
-
 此生爱你不渝
-https://play.readbible.cn/song/p/13693.mp3
+/mp3/csamby.mp3
+#https://play.readbible.cn/song/p/13693.mp3
 
 震动天地
 /mp3/zdtd.mp3
 #https://mp32.9ku.com/upload/128/2016/05/09/542851.mp3
 
 主你是我力量
-https://god7777777.com/shige/%E8%B5%9E%E7%BE%8E%E4%B9%8B%E6%B3%89/%E5%AE%9D%E8%B4%B5%E5%8D%81%E6%9E%B6/%E4%B8%BB%E4%BD%A0%E6%98%AF%E6%88%91%E5%8A%9B%E9%87%8F.mp3
+/mp3/znswll.mp3
+#https://god7777777.com/shige/%E8%B5%9E%E7%BE%8E%E4%B9%8B%E6%B3%89/%E5%AE%9D%E8%B4%B5%E5%8D%81%E6%9E%B6/%E4%B8%BB%E4%BD%A0%E6%98%AF%E6%88%91%E5%8A%9B%E9%87%8F.mp3
 
 带我进入幔内
-https://play.readbible.cn/song/p/13695.mp3
+/mp3/dwjrmn.mp3
+#https://play.readbible.cn/song/p/13695.mp3
 #http://qcdn.kuaiyuhudong.cn/song/1/37/672bfac41a514ba3.m4a
 
 从亘古到永远
@@ -341,27 +336,27 @@ https://play.readbible.cn/song/p/18347.mp3
 https://play.readbible.cn/song/p/13694.mp3
 
 如鹰展翅上腾
-https://play.readbible.cn/song/p/13696.mp3
-
+/mp3/ryzcst.mp3
+#https://play.readbible.cn/song/p/13696.mp3
 
 每一天我需要你 赞美之泉
 #https://god7777777.com/shige/zmzq2/wykj/%E6%AF%8F%E4%B8%80%E5%A4%A9%E6%88%91%E9%9C%80%E8%A6%81%E4%BD%A0.mp3
 /mp3/mytwxyn.mp3
 
 我要看见 - 赞美之泉
-https://god7777777.com/shige/zmzq2/wykj/%E6%88%91%E8%A6%81%E7%9C%8B%E8%A7%81.mp3
+/mp3/wykj.mp3
+#https://god7777777.com/shige/zmzq2/wykj/%E6%88%91%E8%A6%81%E7%9C%8B%E8%A7%81.mp3
 
-一粒麦子 - 小羊诗歌
-https://play.readbible.cn/song/p/28231.mp3
+一粒麦子
+/mp3/ylmz.mp3
+#https://play.readbible.cn/song/p/28231.mp3
 
-新酒 （约书亚乐团）
-https://play.readbible.cn/song/p/7940.mp3
+新酒
+/mp3/xj_ysy.mp3
+#https://play.readbible.cn/song/p/7940.mp3
 
 前来敬拜 (赞美之泉)
 /mp3/qljb.mp3
-
-耶稣基督 (约书亚乐团) 
-https://play.readbible.cn/song/p/23935.mp3
 
 一生一世 (我心旋律)
 https://play.readbible.cn/song/p/11393.mp3
@@ -377,7 +372,8 @@ https://play.readbible.cn/song/p/8394.mp3
 https://play.readbible.cn/song/p/6920.mp3
 
 全然为你_生命河灵粮堂
-https://play.readbible.cn/song/p/10408.mp3
+/mp3/qrwn.mp3
+#https://play.readbible.cn/song/p/10408.mp3
 
 我们又在一起
 https://play.readbible.cn/song/p/11298.mp3
@@ -386,22 +382,23 @@ https://play.readbible.cn/song/p/11298.mp3
 /mp3/yhhxlds.mp3
 
 恩典已降临 - 生命河灵粮堂
-https://play.readbible.cn/song/p/18345.mp3
+/mp3/edyjl.mp3
+#https://play.readbible.cn/song/p/18345.mp3
 
 何等恩典 \ㅤ
 /mp3/hded.mp3
 
 尽情的敬拜
-https://play.readbible.cn/song/p/10404.mp3
+/mp3/jqdjb.mp3
+#https://play.readbible.cn/song/p/10404.mp3
 
 天开了
+/mp3/tkl.mp3
 https://play.readbible.cn/song/p/18352.mp3
 
-呼求祢怜悯
-https://play.readbible.cn/song/p/28945.mp3
-
 更深经历你
-https://play.readbible.cn/song/p/18356.mp3
+/mp3/gsjln.mp3
+#https://play.readbible.cn/song/p/18356.mp3
 
 神的宝座在这里
 https://play.readbible.cn/song/p/35397.mp3
@@ -409,26 +406,20 @@ https://play.readbible.cn/song/p/35397.mp3
 奇妙事必定要成就
 https://play.readbible.cn/song/p/35405.mp3
 
-赞美不停息
-https://play.readbible.cn/song/p/28940.mp3
-
-天上的敬拜
-https://play.readbible.cn/song/p/28942.mp3
-
 抬起我的头
-https://play.readbible.cn/song/p/18348.mp3
+/mp3/tqwdt.mp3
+#https://play.readbible.cn/song/p/18348.mp3
 
 求你为我造清洁的心
 https://play.readbible.cn/song/p/18350.mp3
 
-更深经历你
-https://play.readbible.cn/song/p/18356.mp3
-
 只愿得着你
-https://play.readbible.cn/song/p/18358.mp3
+/mp3/zydzn.mp3
+#https://play.readbible.cn/song/p/18358.mp3
 
 返璞归真
-https://play.readbible.cn/song/p/14726.mp3
+/mp3/fpgz.mp3
+#https://play.readbible.cn/song/p/14726.mp3
 
 你的爱不离不弃
 https://play.readbible.cn/song/p/14720.mp3
@@ -437,7 +428,8 @@ https://play.readbible.cn/song/p/14720.mp3
 https://play.readbible.cn/song/p/13697.mp3
 
 从破碎到自由
-https://play.readbible.cn/song/p/13700.mp3
+/mp3/cpsdzy.mp3
+#https://play.readbible.cn/song/p/13700.mp3
 
 生命的泉源
 https://play.readbible.cn/song/p/13703.mp3
@@ -479,7 +471,26 @@ https://play.readbible.cn/song/p/28233.mp3
 https://play.readbible.cn/song/p/7932.mp3
 
 来高声唱
-https://play.readbible.cn/song/p/7081.mp3
+/mp3/lgsc.mp3
+#https://play.readbible.cn/song/p/7081.mp3
+
+神羔羊配得
+/mp3/sgypd.mp3
+
+十架的爱
+/mp3/sjda.mp3
+
+世界之光
+/mp3/sjzg.mp3
+
+无人能像你
+/mp3/wrnzx.mp3
+
+安静
+/mp3/aj.mp3
+
+能不能
+/mp3/nbn.mp3
 
 愿天欢喜
 /mp3/ythx.mp3
@@ -489,7 +500,8 @@ https://play.readbible.cn/song/p/7081.mp3
 https://god7777777.com/shige/zmzq2/akydydd/04%20%E6%88%91%E8%A6%81%E5%85%A8%E5%BF%83%E8%B5%9E%E7%BE%8E.mp3
 
 耶稣基督是主 \2022
-https://play.readbible.cn/song/p/1326.mp3
+/mp3/ysdjsz.mp3
+#https://play.readbible.cn/song/p/1326.mp3
 
 来欢呼来赞美 \2022
 /mp3/lhhlzm.mp3
@@ -516,7 +528,8 @@ https://play.readbible.cn/song/p/21789.mp3
 https://play.readbible.cn/song/p/15583.mp3
 
 在呼召我之处 \2022
-https://play.readbible.cn/song/p/15716.mp3
+/mp3/zhzwzc.mp3
+#https://play.readbible.cn/song/p/15716.mp3
 
 How awesome you are \2022
 /mp3/haya.mp3
@@ -562,6 +575,179 @@ Battle Belongs
 
 Hymn Of Heaven
 /mp3/hymnofheaven.mp3
+
+上帝能够
+/mp3/sdng.mp3
+
+何等伟大的爱
+/mp3/hdwdda.mp3
+
+你信实保守我
+/mp3/nxsbsw.mp3
+
+如群星照耀
+/mp3/rqxzy.mp3
+
+我感谢你耶稣
+/mp3/wgxnys.mp3
+
+我愿降服
+/mp3/wyxf.mp3
+
+我深渴望
+/mp3/wskw.mp3
+
+我真的好爱你
+/mp3/wzdhan.mp3
+
+祷告一直到成就
+/mp3/dgyzdcj.mp3
+
+耶稣我爱你到永远
+/mp3/yswandyy.mp3
+
+胜过这世界
+/mp3/sgzsj.mp3
+
+虽有千人仆倒
+/mp3/syqrpd.mp3
+
+Spirit Break Out
+/mp3/spiritbreakout.mp3
+
+你圣名
+/mp3/nsm.mp3
+
+国度属于你
+/mp3/gdsyn.mp3
+
+坚强的爱
+/mp3/jqda.mp3
+#https://play.readbible.cn/song/p/23927.mp3
+
+就是现在
+/mp3/jsxz.mp3
+#https://play.readbible.cn/song/p/23938.mp3
+
+我要爱慕你
+/mp3/wyamn.mp3
+
+敬拜的心
+/mp3/jbdx.mp3
+
+用你双手拥抱我
+/mp3/ynssybw.mp3
+
+神伟大的舞池
+/mp3/swddwc.mp3
+#https://play.readbible.cn/song/p/23933.mp3
+
+耶稣基督
+/mp3/ysjd.mp3
+#https://play.readbible.cn/song/p/23935.mp3
+
+苏醒 Wake
+/mp3/sx.mp3
+#https://play.readbible.cn/song/p/23934.mp3
+#https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
+#https://t.tehc.workers.dev/-----https://weworshipshh.com/mp3/01%20%E7%94%A6%E9%86%92%20Wake%20(%E6%BC%94%E5%94%B1-%E7%92%BD%E6%81%A9).mp3
+
+进城曲
+/mp3/jcq.mp3
+
+你是快来君王
+/mp3/nskljw.mp3
+#https://play.readbible.cn/song/p/28939.mp3
+
+充满我
+/mp3/cmw.mp3
+
+呼求你怜悯
+/mp3/hqnlm.mp3
+#https://play.readbible.cn/song/p/28945.mp3
+
+圣灵的火
+/mp3/sldh.mp3
+
+天上的敬拜
+/mp3/tsdjb.mp3
+#https://play.readbible.cn/song/p/28942.mp3
+
+奔向爱我的神
+/mp3/bxawds.mp3
+
+带我进水深处
+/mp3/dwjssc.mp3
+
+感谢耶稣
+/mp3/gxys.mp3
+
+愿你以我的默念为甘甜
+/mp3/ynywdmnwgt.mp3
+
+我心渴望
+/mp3/wxkw.mp3
+
+我的阿爸天父
+/mp3/wdabtf.mp3
+
+是你
+/mp3/sn.mp3
+
+梦想
+/mp3/mx.mp3
+
+让全地都听见
+/mp3/rqddtj.mp3
+
+赞美不停息
+/mp3/zmbtx.mp3
+#https://play.readbible.cn/song/p/28940.mp3
+
+你的恩典够我用
+/mp3/ndedgwy.mp3
+
+我心属于你
+/mp3/wxsyn.mp3
+
+这是圣洁之地
+/mp3/zssjzd.mp3
+
+耶稣掌权
+/mp3/yszq.mp3 
+
+生命在于你
+/mp3/smzyn.mp3
+
+愿你国降临
+/mp3/yngjl.mp3
+
+打开天窗
+/mp3/dktc.mp3
+
+奔跑不放弃
+/mp3/bpbfq.mp3
+
+看见神的爱
+/mp3/kjsda.mp3
+
+能力归我神
+/mp3/nlgws.mp3
+
+荣耀的呼召
+/mp3/rydhz.mp3
+
+伟大奇妙神
+/mp3/wdqms.mp3
+
+我神真伟大
+/mp3/wszwd.mp3
+
+以利亚的日子
+/mp3/ylydrz.mp3
+
+荣耀都归你
+/mp3/rydgn.mp3
 
 #<small style="color:#d7d7d7; text-align:right;"> 🍉 <i>and</i> 🍄 <i>are best friends</i></small>
 #<small style="color:#d7d7d7; text-align:right;"> 🦊<i> likes to eat </i>🍃</small>
