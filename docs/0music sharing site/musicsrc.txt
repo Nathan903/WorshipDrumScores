@@ -394,7 +394,7 @@ https://play.readbible.cn/song/p/11298.mp3
 
 天开了
 /mp3/tkl.mp3
-https://play.readbible.cn/song/p/18352.mp3
+#https://play.readbible.cn/song/p/18352.mp3
 
 更深经历你
 /mp3/gsjln.mp3
@@ -748,7 +748,3 @@ Spirit Break Out
 
 荣耀都归你
 /mp3/rydgn.mp3
-
-#<small style="color:#d7d7d7; text-align:right;"> 🍉 <i>and</i> 🍄 <i>are best friends</i></small>
-#<small style="color:#d7d7d7; text-align:right;"> 🦊<i> likes to eat </i>🍃</small>
-#<small style="color:#d7d7d7; text-align:right;"> 🍉<i> lives in a </i>🚢</small>
