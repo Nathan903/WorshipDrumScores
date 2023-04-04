@@ -484,7 +484,7 @@ https://play.readbible.cn/song/p/7932.mp3
 /mp3/sjzg.mp3
 
 无人能像你
-/mp3/wrnzx.mp3
+/mp3/wrnzxn.mp3
 
 安静
 /mp3/aj.mp3
@@ -500,7 +500,7 @@ https://play.readbible.cn/song/p/7932.mp3
 https://god7777777.com/shige/zmzq2/akydydd/04%20%E6%88%91%E8%A6%81%E5%85%A8%E5%BF%83%E8%B5%9E%E7%BE%8E.mp3
 
 耶稣基督是主 \2022
-/mp3/ysdjsz.mp3
+/mp3/ysjdsz.mp3
 #https://play.readbible.cn/song/p/1326.mp3
 
 来欢呼来赞美 \2022
@@ -748,3 +748,6 @@ Spirit Break Out
 
 荣耀都归你
 /mp3/rydgn.mp3
+
+君王就在这里
+/mp3/jwjzzl.mp3
