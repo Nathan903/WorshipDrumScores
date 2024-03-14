@@ -50,7 +50,8 @@ https://mp3.9ku.com/mp3/543/542903.mp3
 #https://play.readbible.cn/song/p/15715.mp3
 
 我们欢迎君王降临 (赞美之泉)
-https://god7777777.com/shige/zmzq2/zlyry/08%E6%88%91%E4%BB%AC%E6%AC%A2%E8%BF%8E%E5%90%9B%E7%8E%8B%E9%99%8D%E4%B8%B4.mp3
+#https://god7777777.com/shige/zmzq2/zlyry/08%E6%88%91%E4%BB%AC%E6%AC%A2%E8%BF%8E%E5%90%9B%E7%8E%8B%E9%99%8D%E4%B8%B4.mp3
+/mp3/wmhyjwjl.mp3
 
 和散那
 /mp3/hsn_ysy.mp3
@@ -787,3 +788,24 @@ Cornerstone
 Man of Sorrows
 https://static1.1.sqspcdn.com/static/f/157586/22196018/1363389992657/ManofSorrows.mp3?token=Uz%2BENn8jhjnV3apMLbIkcetM96Y%3D
 ManofSorrows.mp3
+
+活出爱
+/mp3/hca.mp3
+
+真实的敬拜
+/mp3/zsdjb.mp3
+
+Who You Say I Am
+/mp3/WhoYouSayIAm.mp3
+
+凡事都有神的美意
+/mp3/fsdysdmy.mp3
+
+美好事 ⧸ Something Good
+/mp3/mhs.mp3
+
+恩典的记号
+/mp3/eddjh.mp3
+
+我们爱让世界不一样
+/mp3/wmarsjbyy.mp3
