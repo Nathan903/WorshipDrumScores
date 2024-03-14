@@ -69,6 +69,55 @@ last updated """+str(datetime.datetime.now())+"""
 
 
 <script type="text/javascript">
+let lastPlayedAudios = []; 
+function playRandomAudio() {
+    const audioElements = document.getElementsByTagName('audio');
+    
+    // Filter out audio elements that are visible
+    const visibleAudioElements = Array.from(audioElements).filter(audio => window.getComputedStyle(audio).display !== 'none');
+    
+    // Check if there are any visible audio elements
+    if (visibleAudioElements.length > 0) {
+        let availableAudios = visibleAudioElements.filter(audio => !lastPlayedAudios.includes(audio));
+        let randomAudio;
+
+        if (availableAudios.length <= 2) {
+            // Play any available audio if there are 2 or fewer visible audios
+            randomAudio = availableAudios[Math.floor(Math.random() * availableAudios.length)];
+        } else {
+            do {
+                randomAudio = availableAudios[Math.floor(Math.random() * availableAudios.length)];
+            } while (lastPlayedAudios.includes(randomAudio));
+        }
+
+        // Play the selected random audio
+        randomAudio.play();
+        
+        lastPlayedAudios.push(randomAudio);
+        if (lastPlayedAudios.length > 2) {
+            lastPlayedAudios.shift(); // Remove the oldest played audio element if the history exceeds 2
+        }
+
+        // Remove and reattach 'ended' event listener
+        randomAudio.removeEventListener('ended', playRandomAudio);       
+        randomAudio.addEventListener('ended', playRandomAudio);
+    }
+}
+
+  // Function to handle the click event on audio elements
+  function handleAudioClick(event) {
+      const audio = event.target;
+        lastPlayedAudios.push(audio);
+        if (lastPlayedAudios.length > 2) {
+            lastPlayedAudios.shift(); // Remove the oldest played audio element if the history exceeds 2
+        }
+
+      audio.removeEventListener('ended', playRandomAudio);
+      audio.addEventListener('ended', playRandomAudio);
+  }
+
+
+
   //auto stopping simultaneous playing
 
   window.addEventListener('load', function(){
@@ -79,6 +128,7 @@ last updated """+str(datetime.datetime.now())+"""
   	    if((el !== el1))
   		el1.pause();
   	});
+    handleAudioClick();
       }
   });
   });
