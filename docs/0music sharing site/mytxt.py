@@ -186,8 +186,8 @@ def getInitial(inputString):
         l = l.translate(str.maketrans('','',zhon.hanzi.punctuation))
 
         classl=strip_emoji("".join(lazy_pinyin(l, strict=False, errors='ignore')))
-        if "^" in inputString:
-            classl+="^"
+        if "*" in inputString:
+            classl+="*"
         if "\\" in inputString:
             classl+="\\"
         return ([strip_emoji("".join(i[0] for i in pinyin(l, style=Style.FIRST_LETTER, strict=False, errors='ignore'))), l, classl])
@@ -200,8 +200,8 @@ def getInitial(inputString):
         if "\\" in inputString:
             classl+="\\"
 
-        if "^" in inputString:
-            classl+="^"
+        if "*" in inputString:
+            classl+="*"
         return ([strip_emoji(l.replace(" ","").lower()), l, classl])
 
 def minifyjs(fname):
