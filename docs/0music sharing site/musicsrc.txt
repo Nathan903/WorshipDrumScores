@@ -792,6 +792,9 @@ Man of Sorrows
 https://static1.1.sqspcdn.com/static/f/157586/22196018/1363389992657/ManofSorrows.mp3?token=Uz%2BENn8jhjnV3apMLbIkcetM96Y%3D
 ManofSorrows.mp3
 
+You are holy
+/mp3/youareholy.mp3
+
 活出爱 *
 /mp3/hca.mp3
 
