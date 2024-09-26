@@ -1,54 +1,51 @@
 
 function hide() {
-  	var input, filter, table, tr, p, i, txtValue;
-  	input = document.getElementById("myInput");
-  	filter = input.value.toUpperCase().replace(/\s+/g, '');
-  	table = document.getElementById("myTable");
-  	tr = table.getElementsByTagName("p");
-  	let n=tr.length;
-  	for (i = 0; i < tr.length; i++) {
-	    p = tr[i];
-	    if (p) {
-	      	txtValue = p.id+"|"+p.className+"|"+p.textContent || p.innerText;
-	      	if (txtValue.toUpperCase().replace(/\s+/g, '').indexOf(filter)>-1) {
-	        	tr[i].style.display = "";
-	      	}
-		    else {
-		    	n=n-1;
-		    	tr[i].style.display = "none";
-	      	}
-	    }
-	}
-	//console.log(n);
-	if (n==1){
-		for (i = 0; i < tr.length; i++) {
-			if (tr[i].style.display == ""){
-				//console.log('loading'+tr[i].textContent);
-				try{
-			      	//console.log(tr[i].getElementsByTagName("audio")[0].preload)
-			      	tr[i].getElementsByTagName("audio")[0].preload="auto";
-		    	}
-		    	catch{
-		      		//console.log(tr[i])
-				}
-			}
-		}
+    var input, filters, table, tr, p, i, txtValue;
+    input = document.getElementById("myInput");
+    filters = input.value.toUpperCase().split('-').map(term => term.trim().replace(/\s+/g, '')); // Split by dash and clean up terms
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("p");
+    let n = tr.length;
+  
+    for (i = 0; i < tr.length; i++) {
+        p = tr[i];
+        if (p) {
+            txtValue = p.id + "|" + p.className + "|" + p.textContent || p.innerText;
+            txtValue = txtValue.toUpperCase().replace(/\s+/g, '');
 
-	}
-	else if (n < 5){
-		for (i = 0; i < tr.length; i++) {
-			if (tr[i].style.display == ""){
-				//console.log('loading'+tr[i].textContent);
-				try{
-			      	//console.log(tr[i].getElementsByTagName("audio")[0].preload)
-			      	tr[i].getElementsByTagName("audio")[0].preload="metadata";
-		    	}
-		    	catch{
-		      		//console.log(tr[i])
-				}
-			}
-		}
-	}
+            // Check if any of the filters match
+            let isMatch = filters.some(filter => txtValue.indexOf(filter) > -1);
+
+            if (isMatch) {
+                tr[i].style.display = "";
+            } else {
+                n = n - 1;
+                tr[i].style.display = "none";
+            }
+        }
+    }
+
+    if (n == 1) {
+        for (i = 0; i < tr.length; i++) {
+            if (tr[i].style.display == "") {
+                try {
+                    tr[i].getElementsByTagName("audio")[0].preload = "auto";
+                } catch {
+                    // Do nothing if no audio tag exists
+                }
+            }
+        }
+    } else if (n < 5) {
+        for (i = 0; i < tr.length; i++) {
+            if (tr[i].style.display == "") {
+                try {
+                    tr[i].getElementsByTagName("audio")[0].preload = "metadata";
+                } catch {
+                    // Do nothing if no audio tag exists
+                }
+            }
+        }
+    }
 }
 
 function r() {
