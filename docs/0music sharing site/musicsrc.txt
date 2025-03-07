@@ -790,7 +790,7 @@ Jesus, I My Cross Have Taken
 Nothing but the blood of Jesus
 
 Cornerstone
-#https://www.youtube.com/watch?v=SiFBzVDVgf4
+/mp3/cornerstone.mp3
 
 Man of Sorrows
 https://static1.1.sqspcdn.com/static/f/157586/22196018/1363389992657/ManofSorrows.mp3?token=Uz%2BENn8jhjnV3apMLbIkcetM96Y%3D
@@ -845,3 +845,14 @@ Who You Say I Am
 
 天国八福
 /mp3/tgbf.webm
+
+And Can It Be (That I Should Gain?)
+/mp3/andcanitbe.mp3
+
+Oh, the depth of the riches (Romans 11 Doxology)
+/mp3/ohthedepthoftheriches.mp3
+# https://www.youtube.com/watch?v=5vSVTBIB7I8 
+# https://www.youtube.com/watch?v=Cep_YDnkPec
+
+Sold Out
+/mp3/soldout.mp3
