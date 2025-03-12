@@ -77,7 +77,8 @@ https://play.zanmei.co/song/p/11385.mp3
 /mp3/ysnxn.mp3
 
 展开清晨的翅膀 (赞美之泉)
-https://mp32.9ku.com/upload/128/2016/05/09/543008.mp3
+#https://mp32.9ku.com/upload/128/2016/05/09/543008.mp3
+/mp3/zkqcdcb.mp3
 
 只要有你在我左右 (赞美之泉)
 /mp3/zyynzwzy.mp3
@@ -856,3 +857,16 @@ Oh, the depth of the riches (Romans 11 Doxology)
 
 Sold Out
 /mp3/soldout.mp3
+
+A Christian's Daily Prayer
+
+Only a Holy God
+
+Christ Is Mine Forevermore
+/mp3/ChristIsMineForevermore.mp3
+
+在祢手中
+/mp3/znsz.mp3
+
+He Will Hold Me Fast
+/mp3/HeWillHoldMeFast.mp3
