@@ -133,7 +133,7 @@ https://play.zanmei.co/song/p/40881.mp3
 https://mp32.9ku.com/upload/128/2016/05/11/518414.mp3
 ###
 
-将天敞开
+将天敞开 \
 /mp3/jtck.mp3
 #https://god7777777.com/shige/zmzq2/jtck/%E6%97%A5%E6%97%A5%E5%A4%9C%E5%A4%9C.mp3
 #https://mp3.9ku.com/mp3/530/529223.mp3
@@ -207,7 +207,7 @@ https://mp32.9ku.com/upload/128/2016/05/12/543033.mp3
 /mp3/xlqy.mp3
 #https://mp3.9ku.com/mp3/544/543047.mp3
 
-宝贵十架
+宝贵十架 \
 /mp3/bgsj.mp3
 #https://mp3.9ku.com/mp3/544/543017.mp3
 
@@ -545,7 +545,7 @@ How awesome you are
 十字架 
 /mp3/szj.mp3
 
-你永远如此深爱着我 
+你永远如此深爱着我 \
 /mp3/nyyrcsazw.mp3
 
 我相信（英文） 
@@ -626,7 +626,7 @@ Spirit Break Out
 国度属于你
 /mp3/gdsyn.mp3
 
-坚强的爱
+坚强的爱 \
 /mp3/jqda.mp3
 #https://play.zanmei.co/song/p/23927.mp3
 
@@ -870,3 +870,25 @@ Christ Is Mine Forevermore
 
 He Will Hold Me Fast
 /mp3/HeWillHoldMeFast.mp3
+
+相信有爱就有奇迹 \
+/mp3/xxyajyqj.mp3
+
+你爱不变 \
+/mp3/nabb.mp3
+
+圣洁的爱 \
+/mp3/sjda1.mp3
+
+充满在这里 \
+/mp3/cmzzl.mp3
+
+爱使我们勇敢 \
+/mp3/aswmyg.mp3
+
+站立在你爱中 \
+/mp3/zlznaz.mp3
+
+The Blessing \
+/mp3/theblessing.mp3 
+

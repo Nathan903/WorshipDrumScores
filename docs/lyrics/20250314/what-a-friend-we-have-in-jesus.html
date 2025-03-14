@@ -1,0 +1,106 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>耶稣恩友 What a Friend We Have in Jesus</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="current">耶稣恩友 What a Friend We Have in Jesus</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>耶稣恩友 What a Friend We Have in Jesus</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1; padding-right: 10px;">
+                <p>What a friend we have in Jesus,<br />
+耶稣是我亲爱朋友<br />
+All ours sins and griefs to bear,<br />
+担当我罪与忧愁<br />
+What a privilege to carry<br />
+何等权利能将万事<br />
+Everything to God in prayer!<br />
+带到主恩座前求<br />
+O what peace we often forfeit,<br />
+多少平安屡屡失去<br />
+O what needless pain we bear,<br />
+多少痛苦白白受<br />
+All because we do not carry<br />
+皆因我们未将万事<br />
+Everything to God in prayer!<br />
+带到主恩座前求</p>
+<p>Have we trials and temptations?<br />
+是否烦恼压着心头<br />
+Is there trouble anywhere?<br />
+是否遇试炼引诱<br />
+We should never be discouraged;<br />
+我们切莫灰心失望<br />
+Take it to the Lord in prayer.<br />
+快到主恩座前求<br />
+Can we find a friend so faithful<br />
+何处得此忠心朋友<br />
+Who will all our sorrows share?<br />
+分担一切苦与忧<br />
+Jesus knows our every weakness;<br />
+我们弱点主都知透<br />
+Take it to the Lord in prayer.<br />
+放心到主座前求</p>
+<p>Are we weak and heavy laden,<br />
+劳苦多愁软弱不堪<br />
+Cumbered with a load of care?<br />
+挂虑重担压肩头<br />
+Precious Saviour still our refuge;<br />
+主是你我避难处所<br />
+Take it to the Lord in prayer.<br />
+快到主恩座前求<br />
+Do thy friends despise forsake thee?<br />
+你若遭遇友叛亲离<br />
+Take it to the Lord in prayer!<br />
+来到主恩座前求<br />
+In His arms He’ll take and shield thee;<br />
+在主怀中必蒙护佑<br />
+Thou will find a solace there.<br />
+与主同在永无忧</p>
+<p>Jesus, oh what a friend we have in Jesus<br />
+耶稣是我亲爱朋友</p>
+            </div>
+            <div style="flex: 1; padding-left: 10px;">
+                
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    

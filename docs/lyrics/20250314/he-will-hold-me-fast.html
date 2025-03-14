@@ -1,0 +1,127 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>他必保守我 He Will Hold Me Fast</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="current">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>他必保守我 He Will Hold Me Fast</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1; padding-right: 10px;">
+                <p>当我怕信心失丧<br />
+基督保守我<br />
+当我被试探胜过<br />
+他会保守我</p>
+<p>蜿蜒崎岖人生路<br />
+独自难稳妥<br />
+因我爱心常冷漠<br />
+需他保守我</p>
+<p>他必保守我<br />
+他必保守我<br />
+因我主如此爱我<br />
+他必保守我</p>
+<p>我主看我为珍宝<br />
+他会保守我<br />
+蒙主耶稣他眷顾<br />
+他必保守我</p>
+<p>他不愿我灵失丧 <br />
+他应许永存<br />
+如此代价拯救我<br />
+他必保守我</p>
+<p>他必保守我<br />
+他必保守我<br />
+因我主如此爱我<br />
+他必保守我</p>
+<p>他流血舍命为我<br />
+他会保守我<br />
+公义已被主成就<br />
+他必保守我</p>
+<p>我已与他同复活<br />
+他必保守我<br />
+直到所信成眼见<br />
+直到他再来</p>
+<p>他必保守我<br />
+他必保守我<br />
+因我主如此爱我<br />
+他必保守我</p>
+            </div>
+            <div style="flex: 1; padding-left: 10px;">
+                <p>When I fear my faith will fail<br />
+Christ will hold me fast<br />
+When the tempter would prevail<br />
+He will hold me fast</p>
+<p>I could never keep my hold<br />
+Through life's fearful path<br />
+For my love is often cold<br />
+He must hold me fast!</p>
+<p>He will hold me fast<br />
+He will hold me fast<br />
+For my Savior loves me so,<br />
+He will hold me fast</p>
+<p>I am precious in His sight,<br />
+He will hold me fast;<br />
+Those He saves are His delight<br />
+He will hold me fast.</p>
+<p>He’ll not let my soul be lost,<br />
+His promises shall last<br />
+Bought by Him at such a cost,<br />
+He will hold me fast. </p>
+<p>He will hold me fast<br />
+He will hold me fast<br />
+For my Savior loves me so,<br />
+He will hold me fast</p>
+<p>For my life He bled and died<br />
+Christ will hold me fast<br />
+Justice has been satisfied<br />
+He will hold me fast</p>
+<p>Raised with Him to endless life<br />
+He will hold me fast<br />
+Till our faith is turned to sight<br />
+When he comes at last</p>
+<p>He will hold me fast<br />
+He will hold me fast<br />
+For my Savior loves me so,<br />
+He will hold me fast</p>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    

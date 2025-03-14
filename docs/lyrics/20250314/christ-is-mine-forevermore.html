@@ -1,0 +1,129 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>基督属我到永远 Christ is Mine Forevermore</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="current">基督属我到永远 Christ is Mine Forevermore</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>基督属我到永远 Christ is Mine Forevermore</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1; padding-right: 10px;">
+                <p>我的年日 神已数算<br />
+我受造 与他同行<br />
+但我追逐世间虚荣<br />
+丢弃主 万王之王</p>
+<p>但救主是我唯一盼望<br />
+我软弱  他爱恒存<br />
+因基督完全背负我罪<br />
+我属他  直到永远</p>
+<p>我曾苦楚  满布泪痕<br />
+陷黑暗无力胜脱<br />
+低谷风浪虽曾度过<br />
+寻不见其中美好</p>
+<p>但属天平安流入我心<br />
+主力量  按时加添<br />
+我知我苦痛不是徒然<br />
+主工成就在我身</p>
+<p>我的年日  如同客旅<br />
+成圣路  坎坷崎岖<br />
+跟随基督我不独行<br />
+因主名  同赴患难</p>
+<p>但基督赐我全副军装<br />
+每争战必要得胜<br />
+他应许我他必定拯救<br />
+平安达人生彼岸</p>
+<p>我得主引导 踏向锡安<br />
+主相伴不离左右<br />
+因我已寻见无价之宝<br />
+基督属我到永远</p>
+<p>我的心要称颂他<br />
+因他赐下奇妙爱<br />
+不再惧怕 有盼望<br />
+基督属我到永远<br />
+X3</p>
+<p>我得主引导 踏向锡安<br />
+主相伴不离左右<br />
+因我已寻见无价之宝<br />
+基督属我到永远 X3</p>
+            </div>
+            <div style="flex: 1; padding-left: 10px;">
+                <p>Mine are days that God has numbered,<br />
+I was made to walk with him.<br />
+Yet I look for worldly treasure,<br />
+And forsake the king of kings.</p>
+<p>But mine is hope in my redeemer,<br />
+Though I fall, His love is sure.<br />
+For Christ has paid for every failing,<br />
+I am His forevermore.</p>
+<p>Mine are tears in every sorrow,<br />
+Darkness yet not understood.<br />
+Though the valley I must travel,<br />
+Where I see no earthly good.</p>
+<p>But mine is peace that flows from heaven,<br />
+And the strength in times of need.<br />
+I know my pain will not be wasted,<br />
+Christ completes His work in me.</p>
+<p>Mine are days here as a stranger,<br />
+Pilgrim on a narrow way.<br />
+One with Christ I will encounter,<br />
+Harm and hatred for His name.</p>
+<p>But mine is armor for this battle,<br />
+Strong enough to last the war.<br />
+And He has said He will deliver,<br />
+Safely to the golden shore.</p>
+<p>And mine are keys to Zion city,<br />
+Where beside the King I walk.<br />
+For there my heart has found its treasure,<br />
+Christ is mine forevermore.</p>
+<p>Come rejoice now, O my soul,<br />
+For His love is my reward.<br />
+Fear is gone and hope is sure,<br />
+Christ is mine forevermore.<br />
+X3</p>
+<p>And mine are keys to Zion city,<br />
+Where beside the King I walk.<br />
+For there my heart has found its treasure,<br />
+Christ is mine forevermore. X3</p>
+            </div>
+        </div>
+        <p><a href="https://www.youtube.com/watch?v=YKYcn5z3a8M">https://www.youtube.com/watch?v=YKYcn5z3a8M</a> </p>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    

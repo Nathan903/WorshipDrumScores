@@ -1,0 +1,209 @@
+body {
+    font-family: Cambria, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.content {
+    flex-grow: 1;
+    margin-left: 300px; /* Adjusted to match the width of the nav bar */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+h1, h2, h3 {
+    color: var(--header-color);
+}
+
+h1 {
+    font-size: 1.7em;
+}
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.toggle-btn:hover {
+    background-color: #444;
+    transition: background-color 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+/* Sidebar styles */
+nav {
+    width: 15em;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--nav-bg-color);
+    padding: 1.5em;
+    overflow-y: auto;
+    font-size: 0.9em;
+    transition: transform 0.3s ease-in-out;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 15px 0;
+}
+nav ul li a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-weight: normal; /* Reduce font weight */
+    opacity: 0.77; /* Make the text less prominent */
+    position: relative; /* Required for the pseudo-element */
+    transition: opacity 0.3s ease-in-out; /* Add transition for hover effect */
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--header-color); /* Use header color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.1s ease-in-out;
+}
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+nav ul li a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    opacity: 1; /* Increase opacity on hover for better visibility */
+}
+nav ul li a.current {
+    background-color: var(--highlight-color);
+    color: var(--header-color);
+}
+
+/* Open navigation class */
+.open-nav {
+    transform: translateX(0);
+}
+
+/* Hide the menu button on desktop screens */
+.menu-btn {
+    display: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 1em; /* Reset margin for mobile view */
+        padding: 15px;
+    }
+    nav {
+        transform: translateX(-300px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: min(15em, 90%);
+        background-color: var(--nav-bg-color);
+        transition: transform 0.3s ease-in-out;
+        z-index: 2; /* Ensure the menu is above the content */
+    }
+    nav ul {
+        padding-left: 1em;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 3; /* Ensure the toggle button is above the menu */
+        padding: 5px 10px; /* Make the button smaller */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .menu-btn {
+        display: block;
+        position: fixed;
+        background-color: #777;
+        color: white;
+        padding: 0.3em;
+        border: none;
+        cursor: pointer;
+        height: 100vh;
+        font-size: 1em;
+        z-index: 3; /* Ensure the menu button is above the menu */
+        transition: background-color 0.3s ease-in-out;
+    }
+    .menu-btn:hover {
+        background-color: #888;
+        transition: background-color 0.3s ease-in-out; /* Add transition for hover effect */
+    }
+
+    /* Show the menu when the open-nav class is added */
+    nav.open-nav {
+        transform: translateX(0);
+    }
+}
+.deemphasize {
+    opacity: 0.8;
+    color: var(--text-color);
+}
+.index-heading {
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    color: var(--text-color);
+}
+.index-button{
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add transition for box-shadow */
+    border-radius: 7px; /* Add rounded corners */
+}
+.index-button:hover {
+    background-color: var(--highlight-color);
+    box-shadow: 0 0 10px 10px var(--highlight-color); /* Add soft edge */
+}
+/* Blockquote styles */
+blockquote {
+    border-left: 4px solid var(--highlight-color); /* Vertical line */
+    padding-left: 1em; /* Space between line and text */
+    margin: 1em 0; /* Vertical spacing */
+    color: var(--text-color); /* Text color */
+    background-color: var(--bg-color); /* Background color */
+    /* font-style: italic; Italic text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+/* Default light theme */
+:root {
+    --bg-color: #f0f0e4;
+    --nav-bg-color: #dfdfd0;
+    --text-color: #111111;
+    --header-color: #040404;
+    --highlight-color: #d1d1a6; /* Add highlight color */
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --bg-color: #23231c;
+    --nav-bg-color: #2b2b2b;
+    --text-color: #eeeeee;
+    --header-color: #f4f4f4;
+    --highlight-color: #523f00; /* Add highlight color for dark theme */
+}
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
