@@ -1,0 +1,137 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>未竟的使命 Facing a Task Unfinished</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="">耶稣恩友 What a Friend We Have in Jesus</a></li><li><a href="facing-a-task-unfinished.html" class="current">未竟的使命 Facing a Task Unfinished</a></li><li><a href="a-christians-daily-prayer.html" class="">信徒日祷 A Christian's Daily Prayer</a></li><li><a href="all-i-have-is-christ.html" class="">基督我所有 All I Have Is Christ</a></li><li><a href="how-deep-the-fathers-love-for-us.html" class="">How Deep the Father's Love for Us</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>未竟的使命 Facing a Task Unfinished</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1;">
+                <p>[v1]<br />
+面对未竟的使命<br />
+驱使我们屈膝<br />
+未曾消减的需求<br />
+责我们贪逸心<br />
+认识救主真欢欣<br />
+宝座前被更新<br />
+向祢庄严立心志<br />
+去传扬祢的名</p>
+<p>[v2]<br />
+别神他鬼据四方<br />
+邪恶肆虐猖狂<br />
+恶势抵挡祢之地<br />
+至今仍旧顽抗<br />
+无人理会哀哭声<br />
+求生命爱与光<br />
+无数灵魂正灭亡<br />
+落入黑夜茫茫</p>
+<p>[v3]<br />
+接过燃烧的火炬<br />
+传自先贤之手<br />
+他们曾舍身宣告<br />
+耶稣受死复活<br />
+我们同负这使命<br />
+传扬同一喜信<br />
+点燃同样的雄心<br />
+完全降服主命</p>
+<p>[v4]<br />
+圣父大能常扶持<br />
+圣灵光照引领<br />
+圣子爱催逼先贤<br />
+热心奔跑不倦<br />
+保守我们不丧胆<br />
+倦怠再次警醒<br />
+差遣我们去做工<br />
+为主劳苦尽心</p>
+<p>[c]<br />
+愿去世界万邦<br />
+宣扬天国盼望<br />
+别无它名能够拯救<br />
+惟主耶稣基督</p>
+            </div>
+            <div style="flex: 1;">
+                <p>Facing a task unfinished<br />
+That drives us to our knees<br />
+A need that undiminished<br />
+Rebukes our slothful ease<br />
+We, who rejoice to know Thee<br />
+Renew before Thy throne<br />
+The solemn pledge we owe Thee<br />
+To go and make Thee known</p>
+<p>Where other Lords beside Thee<br />
+Hold their unhindered sway<br />
+Where forces that defied Thee<br />
+Defy Thee still today<br />
+With none to heed their crying<br />
+For life and love and light<br />
+Unnumbered souls are dying<br />
+And pass into the night</p>
+<p>We bear the torch that flaming<br />
+Fell from the hands of those<br />
+Who gave their lives proclaiming<br />
+That Jesus died and rose<br />
+Ours is the same commission<br />
+The same glad message ours<br />
+Fired by the same ambition<br />
+To Thee we yield our powers</p>
+<p>O Father who sustained them<br />
+O Spirit who inspired<br />
+Saviour, whose love constrained them<br />
+To toil with zeal untired<br />
+From cowardice defend us<br />
+From lethargy awake!<br />
+Forth on Thine errands send us<br />
+To labour for Thy sake</p>
+<p>We go to all the world<br />
+With kingdom hope unfurled <br />
+No other name has power to save<br />
+But Jesus Christ The Lord</p>
+            </div>
+        </div>
+        <div class="footer deemphasized">
+            <p>Hymn by Frank Houghton (1931) [1]<br />
+Translated by  Xuguang Pan &amp; Ben Chen [2]<br />
+[1] <a href="https://hymnary.org/text/facing_a_task_unfinished">https://hymnary.org/text/facing_a_task_unfinished</a> <br />
+[2] <a href="https://www.youtube.com/watch?v=Zl2DmULeIs8">https://www.youtube.com/watch?v=Zl2DmULeIs8</a></p>
+        </div>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    

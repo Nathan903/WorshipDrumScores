@@ -1,0 +1,108 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>信徒日祷 A Christian's Daily Prayer</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="">耶稣恩友 What a Friend We Have in Jesus</a></li><li><a href="facing-a-task-unfinished.html" class="">未竟的使命 Facing a Task Unfinished</a></li><li><a href="a-christians-daily-prayer.html" class="current">信徒日祷 A Christian's Daily Prayer</a></li><li><a href="all-i-have-is-christ.html" class="">基督我所有 All I Have Is Christ</a></li><li><a href="how-deep-the-fathers-love-for-us.html" class="">How Deep the Father's Love for Us</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>信徒日祷 A Christian's Daily Prayer</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1;">
+                <p>一日开始，清晨破晓， <br />
+我交托我需要。<br />
+慈爱的神，我的力量、<br />
+生息全源于你。<br />
+每时按祢智慧命定，<br />
+每事蒙祢恩手扶持。<br />
+更新我灵，使我坚立；<br />
+愿荣耀归于祢！</p>
+<p>一日开始， 应对诸事，<br />
+先寻求祢旨意。<br />
+纵然恶者试探不已，<br />
+我紧握祢训诲。<br />
+使我生命每分努力，<br />
+彰显基督荣耀尊贵！<br />
+使我献上成为活祭；<br />
+愿荣耀归于祢！</p>
+<p>日头西沉，黑夜降临，<br />
+圣灵依然陪伴。<br />
+虽我力量如草凋零，<br />
+祢怜悯必显明。<br />
+因祢同在，我心安息，<br />
+能面对痛苦和试炼，<br />
+直到基督最后胜利。<br />
+愿荣耀归于祢；<br />
+这是我心所祈。</p>
+            </div>
+            <div style="flex: 1;">
+                <p>As morning dawns and day awakes,<br />
+To You I bring my need<br />
+O gracious God, my source of strength,<br />
+In You I live and breathe<br />
+Each hour is Yours by wisdom planned,<br />
+Each deed empowered by sovereign hands<br />
+Renew my spirit, help me stand;<br />
+Be glorified today</p>
+<p>As day unfolds, I seek Your will<br />
+In all of life’s demands<br />
+And though the tempter tries me still,<br />
+I cling to Your commands<br />
+Let every effort of my life<br />
+Display the matchless worth of Christ<br />
+Make me a living sacrifice;<br />
+Be glorified today</p>
+<p>As sun gives way to darkest night<br />
+Your Spirit still is here<br />
+And though my strength fades like the light<br />
+New mercies will appear<br />
+I rest in You; abide with me<br />
+Until our trials and suffering<br />
+Give way to final victory<br />
+Be glorified, today; <br />
+Be glorified, I pray</p>
+            </div>
+        </div>
+        <div class="footer deemphasized">
+            <p><a href="https://www.youtube.com/watch?v=BKwfa8l_814">https://www.youtube.com/watch?v=BKwfa8l_814</a><br />
+<a href="https://sovereigngracemusic.com/music/songs/christians-daily-prayer/">https://sovereigngracemusic.com/music/songs/christians-daily-prayer/</a> </p>
+        </div>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    

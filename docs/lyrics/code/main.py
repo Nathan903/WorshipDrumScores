@@ -155,6 +155,7 @@ def generate_blog_pages(markdown_strings):
     snippets = []
     
     for md_string in markdown_strings:
+        if md_string.startswith("# draft"): continue
         title = extract_title(md_string)
         nav_links.append({"title": title, "url": f"{to_url_safe(title)}.html"})
         snippet = " ".join(unmark(md_string).split("\n")[3:])[:222].rsplit(' ', 1)[0] + "..."  # Extract the first few lines as a snippet
@@ -162,25 +163,26 @@ def generate_blog_pages(markdown_strings):
 
     # Create each HTML file
     for md_string in markdown_strings:
+        if md_string.startswith("# draft"): continue
         # Split the markdown into Chinese and English parts
-        lines = md_string.split("\n\n")
-        title = lines.pop(0)
-        chinese_lines = []
-        english_lines = []
+        blocks = md_string.split("\n\n")
+        title = blocks.pop(0)
+        chinese_blocks = []
+        english_blocks = []
         footers = []
-        for line in lines:
+        for line in blocks:
             # if is url:
             print(line)
             if re.search(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', line):
                 footers.append(line)
             elif re.search(r'[\u4e00-\u9fff]', line):
-                chinese_lines.append(line)
+                chinese_blocks.append(line)
             else:
-                english_lines.append(line)
+                english_blocks.append(line)
         
-        chinese_md = "\n\n".join(chinese_lines)
+        chinese_md = "\n\n".join(chinese_blocks)
         print(chinese_md)
-        english_md = "\n\n".join(english_lines)
+        english_md = "\n\n".join(english_blocks)
         
         chinese_html = markdown.markdown(chinese_md)
         english_html = markdown.markdown(english_md)
@@ -189,14 +191,16 @@ def generate_blog_pages(markdown_strings):
         html_content = f"""
         {markdown.markdown(title)}
         <div class="content-container" style="display: flex;">    
-            <div style="flex: 1; padding-right: 10px;">
+            <div style="flex: 1;">
                 {chinese_html}
             </div>
-            <div style="flex: 1; padding-left: 10px;">
+            <div style="flex: 1;">
                 {english_html}
             </div>
         </div>
-        {markdown.markdown(footers_html)}
+        <div class="footer deemphasized">
+            {markdown.markdown(footers_html)}
+        </div>
         """
         
         page_title = extract_title(md_string)

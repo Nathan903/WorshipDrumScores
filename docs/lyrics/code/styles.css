@@ -56,7 +56,7 @@ nav ul {
 nav ul li {
     margin: 15px 0;
 }
-nav ul li a {
+nav ul li a, nav ul li a:visited {
     color: var(--nav-text-color);
     text-decoration: none;
     font-weight: normal; /* Reduce font weight */
@@ -187,6 +187,8 @@ blockquote {
     --text-color: #111111;
     --header-color: #040404;
     --highlight-color: #d1d1a6; /* Add highlight color */
+    --link-color: #0066cc; /* Blue for light mode */
+    --visited-link-color: #551a8b;
 }
 
 /* Dark theme */
@@ -196,14 +198,31 @@ blockquote {
     --text-color: #eeeeee;
     --header-color: #f4f4f4;
     --highlight-color: #523f00; /* Add highlight color for dark theme */
+    --link-color: #66b2ff; /* Light blue for dark mode */
+    --visited-link-color: #a64dff;
 }
 .content-container {
     display: flex;
     flex-direction: row;
 }
 
+.footer.deemphasized {
+    opacity: 0.8; /* Reduce opacity */
+    font-size: 0.8em; /* Slightly smaller font size */
+    margin-top: 20px; /* Add some spacing above the footer */
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--visited-link-color);
+}
+
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;
+        align-items: stretch; /* Ensure all child elements stretch to the full width */
     }
 }

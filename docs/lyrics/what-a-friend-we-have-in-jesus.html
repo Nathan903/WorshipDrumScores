@@ -1,0 +1,107 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>耶稣恩友 What a Friend We Have in Jesus</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="current">耶稣恩友 What a Friend We Have in Jesus</a></li><li><a href="facing-a-task-unfinished.html" class="">未竟的使命 Facing a Task Unfinished</a></li><li><a href="a-christians-daily-prayer.html" class="">信徒日祷 A Christian's Daily Prayer</a></li><li><a href="all-i-have-is-christ.html" class="">基督我所有 All I Have Is Christ</a></li><li><a href="how-deep-the-fathers-love-for-us.html" class="">How Deep the Father's Love for Us</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>耶稣恩友 What a Friend We Have in Jesus</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1;">
+                <p>耶稣是我亲爱朋友<br />
+担当我罪与忧愁<br />
+何等权利能将万事<br />
+带到主恩座前求<br />
+多少平安屡屡失去<br />
+多少痛苦白白受<br />
+皆因我们未将万事<br />
+带到主恩座前求</p>
+<p>是否烦恼压着心头<br />
+是否遇试炼引诱<br />
+我们切莫灰心失望<br />
+快到主恩座前求<br />
+何处得此忠心朋友<br />
+分担一切苦与忧<br />
+我们弱点主都知透<br />
+放心到主座前求</p>
+<p>劳苦多愁软弱不堪<br />
+挂虑重担压肩头<br />
+主是你我避难处所<br />
+快到主恩座前求<br />
+你若遭遇友叛亲离<br />
+来到主恩座前求<br />
+在主怀中必蒙护佑<br />
+与主同在永无忧</p>
+<p>耶稣是我亲爱朋友</p>
+            </div>
+            <div style="flex: 1;">
+                <p>What a friend we have in Jesus,<br />
+All ours sins and griefs to bear,<br />
+What a privilege to carry<br />
+Everything to God in prayer!<br />
+O what peace we often forfeit,<br />
+O what needless pain we bear,<br />
+All because we do not carry<br />
+Everything to God in prayer!</p>
+<p>Have we trials and temptations?<br />
+Is there trouble anywhere?<br />
+We should never be discouraged;<br />
+Take it to the Lord in prayer.<br />
+Can we find a friend so faithful<br />
+Who will all our sorrows share?<br />
+Jesus knows our every weakness;<br />
+Take it to the Lord in prayer.</p>
+<p>Are we weak and heavy laden,<br />
+Cumbered with a load of care?<br />
+Precious Saviour still our refuge;<br />
+Take it to the Lord in prayer.<br />
+Do thy friends despise forsake thee?<br />
+Take it to the Lord in prayer!<br />
+In His arms He’ll take and shield thee;<br />
+Thou will find a solace there.</p>
+<p>Jesus, oh what a friend we have in Jesus</p>
+            </div>
+        </div>
+        <div class="footer deemphasized">
+            
+        </div>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    

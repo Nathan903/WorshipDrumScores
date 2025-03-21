@@ -1,0 +1,110 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>基督我所有 All I Have Is Christ</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="">耶稣恩友 What a Friend We Have in Jesus</a></li><li><a href="facing-a-task-unfinished.html" class="">未竟的使命 Facing a Task Unfinished</a></li><li><a href="a-christians-daily-prayer.html" class="">信徒日祷 A Christian's Daily Prayer</a></li><li><a href="all-i-have-is-christ.html" class="current">基督我所有 All I Have Is Christ</a></li><li><a href="how-deep-the-fathers-love-for-us.html" class="">How Deep the Father's Love for Us</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>基督我所有 All I Have Is Christ</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1;">
+                <p>我曾迷失死荫幽谷，<br />
+仍自信有前路；<br />
+罪中之乐醉生梦死，<br />
+却领我到灭亡。<br />
+我欲挣脱指望全无，<br />
+没料祢却垂顾；<br />
+若不是祢先爱了我，<br />
+我还依然却步。</p>
+<p>努力奔跑人生旅途，<br />
+原来尽是虚无；<br />
+祢竟怜恤我的无助，<br />
+显明救恩与我！<br />
+看袮舍命的爱彰显，<br />
+祢为我受痛苦；<br />
+何等恩典甘愿为我，<br />
+担当神的忿怒。</p>
+<p>哈列路亚！基督，我所有<br />
+哈列路亚！耶稣，我生命</p>
+<p>主，我今后愿单属祢；<br />
+离弃繁华世俗，<br />
+遵行祢命非我所能，<br />
+恳求主赐力量。<br />
+喔主求祢来使用我：<br />
+听凭祢旨意行；<br />
+让我开口歌唱颂诗，<br />
+永远只夸耀袮！</p>
+            </div>
+            <div style="flex: 1;">
+                <p>I once was lost in darkest night<br />
+Yet thought I knew the way<br />
+The sin that promised joy and life<br />
+Had led me to the grave<br />
+I had no hope that You would own<br />
+A rebel to Your will<br />
+And if You had not loved me first<br />
+I would refuse You still</p>
+<p>But as I ran my hell-bound race<br />
+Indifferent to the cost<br />
+You looked upon my helpless state<br />
+And led me to the cross<br />
+And I beheld God’s love displayed<br />
+You suffered in my place<br />
+You bore the wrath reserved for me<br />
+Now all I know is grace</p>
+<p>Hallelujah! All I have is Christ<br />
+Hallelujah! Jesus is my life</p>
+<p>Now, Lord, I would be Yours alone<br />
+And live so all might see<br />
+The strength to follow Your commands<br />
+Could never come from me<br />
+O Father, use my ransomed life<br />
+In any way You choose<br />
+And let my song forever be<br />
+My only boast is You</p>
+            </div>
+        </div>
+        <div class="footer deemphasized">
+            <p><a href="https://www.youtube.com/watch?v=fDPyQuB1LIA">https://www.youtube.com/watch?v=fDPyQuB1LIA</a><br />
+<a href="https://www.youtube.com/watch?v=j3lwsOPEpMw">https://www.youtube.com/watch?v=j3lwsOPEpMw</a> </p>
+        </div>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    
