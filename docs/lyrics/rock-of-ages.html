@@ -1,0 +1,105 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock of Ages 万古磐石为我开</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="">耶稣恩友 What a Friend We Have in Jesus</a></li><li><a href="facing-a-task-unfinished.html" class="">未竟的使命 Facing a Task Unfinished</a></li><li><a href="a-christians-daily-prayer.html" class="">信徒日祷 A Christian's Daily Prayer</a></li><li><a href="all-i-have-is-christ.html" class="">基督我所有 All I Have Is Christ</a></li><li><a href="romans-doxology.html" class="">深邃智慧的神 Romans Doxology</a></li><li><a href="rock-of-ages.html" class="current">Rock of Ages 万古磐石为我开</a></li><li><a href="speak-o-lord.html" class="">Speak O Lord 主请说</a></li><li><a href="how-deep-the-fathers-love-for-us.html" class="">How Deep the Father's Love for Us</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>Rock of Ages 万古磐石为我开</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1;">
+                <p>万古磐石为我开，<br />
+容我藏身在主怀，<br />
+兵丁举枪伤主胁，<br />
+同时流出水和血，<br />
+双重医治我罪过，<br />
+罪刑，罪权皆得脱。</p>
+<p>纵然勤劳不罢休，<br />
+亦不能达主要求，<br />
+纵然心能以持久，<br />
+纵眼泪永远淌流，<br />
+仍不能赎我罪尤，<br />
+惟有主能施拯救。</p>
+<p>两手空空到主前，<br />
+只有依紧十架边，<br />
+赤身求主赐衣服，<br />
+无依靠望主恩勖，<br />
+污秽奔至活泉旁，<br />
+求主洗我免灭亡。</p>
+<p>当我今生年日逝，<br />
+到临终双目垂闭，<br />
+当飞上华美天堂，<br />
+觐见主在宝座上，<br />
+万古磐石为我开，<br />
+容我藏身在主怀。</p>
+            </div>
+            <div style="flex: 1;">
+                <p>Rock of Ages, cleft for me,<br />
+let me hide myself in thee;<br />
+let the water and the blood,<br />
+from thy wounded side which flowed,<br />
+be of sin the double cure;<br />
+save from wrath and make me pure.</p>
+<p>Not the labors of my hands<br />
+can fulfill thy law's demands;<br />
+could my zeal no respite know,<br />
+could my tears forever flow,<br />
+all for sin could not atone;<br />
+thou must save, and thou alone.</p>
+<p>Nothing in my hand I bring,<br />
+simply to the cross I cling;<br />
+naked, come to thee for dress;<br />
+helpless, look to thee for grace;<br />
+foul, I to the fountain fly;<br />
+wash me, Savior, or I die.</p>
+<p>While I draw this fleeting breath,<br />
+when mine eyes shall close in death,<br />
+when I soar to worlds unknown,<br />
+see thee on thy judgment throne,<br />
+Rock of Ages, cleft for me,<br />
+let me hide myself in thee.</p>
+            </div>
+        </div>
+        <div class="footer deemphasized">
+            <p><a href="https://www.cbcbc.org/single-post/sheng-shi-fen-xiang-wan-gu-pan-shi-wei-wo-kai">https://www.cbcbc.org/single-post/sheng-shi-fen-xiang-wan-gu-pan-shi-wei-wo-kai</a></p>
+        </div>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    

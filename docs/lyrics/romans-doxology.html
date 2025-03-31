@@ -1,0 +1,92 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>深邃智慧的神 Romans Doxology</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="">耶稣恩友 What a Friend We Have in Jesus</a></li><li><a href="facing-a-task-unfinished.html" class="">未竟的使命 Facing a Task Unfinished</a></li><li><a href="a-christians-daily-prayer.html" class="">信徒日祷 A Christian's Daily Prayer</a></li><li><a href="all-i-have-is-christ.html" class="">基督我所有 All I Have Is Christ</a></li><li><a href="romans-doxology.html" class="current">深邃智慧的神 Romans Doxology</a></li><li><a href="rock-of-ages.html" class="">Rock of Ages 万古磐石为我开</a></li><li><a href="speak-o-lord.html" class="">Speak O Lord 主请说</a></li><li><a href="how-deep-the-fathers-love-for-us.html" class="">How Deep the Father's Love for Us</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>深邃智慧的神 Romans Doxology</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1;">
+                <p>神丰富智慧知识，何等长阔高深，<br />
+祂的道无人能测度。<br />
+祂判断何等奇妙，超越我们所思，<br />
+祂脚踪无人能追寻。</p>
+<p>因万有源于祂，<br />
+倚靠祂，归于祂，<br />
+愿荣耀归祂直到永远<br />
+荣耀归祂直到永远！<br />
+阿们，阿们，阿们！</p>
+<p>神丰富智慧知识，何等长阔高深，<br />
+祂的作为何等奇妙！<br />
+谁曾作祂的谋士，谁能向祂献策？<br />
+祂赐一切，谁能偿还？</p>
+<p>神丰富智慧知识，何等长阔高深，<br />
+祂的恩典何等浩大！<br />
+祂慈爱永不止息，祂忿怒已远离，<br />
+祂的怜悯每天更新！</p>
+            </div>
+            <div style="flex: 1;">
+                <p>Oh, the depth of the riches, the wisdom of God<br />
+How unsearchable are His ways.<br />
+How profound are his judgments, so high above our thoughts, <br />
+And His pathways no man can trace.</p>
+<p>For from Him and through Him,<br />
+And to Him are all things<br />
+To Him be glory forevermore<br />
+To Him be glory forever!<br />
+Amen! Amen! Amen!</p>
+<p>Oh, the depth of the riches, the wisdom of God<br />
+How magnificent are His ways.<br />
+Who has been His advisor <br />
+And who has counselled Him,<br />
+All He gives us who can repay?</p>
+<p>Oh the depths of the riches, the wisdom of God<br />
+How immeasurable is His grace!<br />
+How unfailing His kindness, so far removed His wrath,<br />
+And His mercies are new each day!</p>
+            </div>
+        </div>
+        <div class="footer deemphasized">
+            
+        </div>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    
