@@ -782,9 +782,8 @@ Sing to Jesus
 Build My Life
 /mp3/https://www.youtube.com/watch?v=S91nZZqP2YM
 
-All I Have Is Christ
-
 How Deep the Fathers Love for Us
+/mp3/howdeepthefathersloveforus.mp3
 
 Jesus, I My Cross Have Taken
 
@@ -892,3 +891,14 @@ He Will Hold Me Fast
 The Blessing \
 /mp3/theblessing.mp3 
 
+Be Thou My Vision
+/mp3/bethoumyvision.mp3
+
+Rock of Ages, Cleft for Me
+/mp3/rockofages.mp3
+
+Facing A Task Unfinished
+/mp3/facingataskunfinished.mp3
+
+All I Have Is Christ
+/mp3/allihaveischrist.mp3
