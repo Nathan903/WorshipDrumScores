@@ -1,0 +1,116 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>永活盼望 Living Hope</title>
+        <link rel="stylesheet" href="code/styles.css">
+    </head>
+    <body>
+        <!-- Menu Button for mobile -->
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <ul> <li><a href="he-will-hold-me-fast.html" class="">他必保守我 He Will Hold Me Fast</a></li><li><a href="what-a-friend-we-have-in-jesus.html" class="">耶稣恩友 What a Friend We Have in Jesus</a></li><li><a href="christ-is-mine-forevermore.html" class="">基督属我到永远 Christ is Mine Forevermore</a></li><li><a href="man-of-sorrows.html" class="">忧伤之子 Man of Sorrows</a></li><li><a href="facing-a-task-unfinished.html" class="">未竟的使命 Facing a Task Unfinished</a></li><li><a href="a-christians-daily-prayer.html" class="">信徒日祷 A Christian's Daily Prayer</a></li><li><a href="all-i-have-is-christ.html" class="">基督我所有 All I Have Is Christ</a></li><li><a href="romans-doxology.html" class="">深邃智慧的神 Romans Doxology</a></li><li><a href="rock-of-ages.html" class="">万古磐石为我开 Rock of Ages</a></li><li><a href="speak-o-lord.html" class="">主请说 Speak O Lord</a></li><li><a href="yet-not-i-but-through-christ-in-me.html" class="">不是我，而是基督在我里面 Yet Not I But Through Christ In Me</a></li><li><a href="in-christ-alone.html" class="">唯独基督 In Christ Alone</a></li><li><a href="living-hope.html" class="current">永活盼望 Living Hope</a></li><li><a href="before-the-throne-of-god-above.html" class="">在高天主的宝座前 Before the Throne of God Above</a></li><li><a href="days-of-elijah.html" class="">以利亚的日子 Days of Elijah</a></li><li><a href="how-deep-the-fathers-love-for-us.html" class="">How Deep the Father's Love for Us</a></li> </ul>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="content">
+            <button class="toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">🌙</button>
+            
+        <h1>永活盼望 Living Hope</h1>
+        <div class="content-container" style="display: flex;">    
+            <div style="flex: 1;">
+                <p>在祢我之间，有深渊隔绝，<br />
+有高山阻险，无法跨越，<br />
+在绝望之中，我举目望天，<br />
+呼求祢名 直到黑夜，</p>
+<p>在幽暗里面，祢慈爱彰显，<br />
+吸引我灵到祢面前，<br />
+恩典已成就，结局已陈写，<br />
+主耶稣 永活盼望，</p>
+<p>有谁能想像 这伟大怜悯，<br />
+有谁能度量如此恩典，<br />
+昔今永在神，降卑自高天，<br />
+背负我罪 担我羞愧，</p>
+<p>借十架宣告，我已得赦免，<br />
+万王之王将我拣选，<br />
+荣美的救主，我愿永属祢，<br />
+主耶稣 永活盼望，</p>
+<p>荣耀清晨里，祢成就应许，<br />
+埋葬的身体 开始呼吸，<br />
+犹大的狮子，打破了沉寂，<br />
+宣告坟墓 不再辖制祢，</p>
+<p>荣耀清晨里，祢成就应许，<br />
+埋葬的身体 开始呼吸，<br />
+犹大的狮子，打破了沉寂，<br />
+宣告坟墓 不再辖制祢，<br />
+主耶稣已经得胜利，</p>
+<p>哈利路亚，赞美主祢释放我，<br />
+哈利路亚，死亡不再捆绑我，<br />
+祢打破所有锁链 ，祢名为救赎恩典，<br />
+主耶稣 永活盼望。</p>
+            </div>
+            <div style="flex: 1;">
+                <p>How great the chasm that lay between us<br />
+How high the mountain I could not climb<br />
+In desperation, I turned to heaven<br />
+And spoke Your name into the night</p>
+<p>Then through the darkness, Your loving kindness<br />
+Tore through the shadows of my soul<br />
+The work is ﬁnished, the end is written<br />
+Jesus Christ, my living hope</p>
+<p>Who could imagine so great a mercy?<br />
+What heart could fathom such boundless grace?<br />
+The God of ages stepped down from glory<br />
+To wear my sin and bear my shame<br />
+The cross has spoken, I am forgiven<br />
+The King of kings calls me His own<br />
+Beautiful Savior, I'm Yours forever<br />
+Jesus Christ, my living hope</p>
+<p>Then came the morning that sealed the promise<br />
+Your buried body began to breathe<br />
+Out of the silence, the Roaring Lion<br />
+Declared the grave has no claim on me<br />
+Then came the morning that sealed the promise<br />
+Your buried body began to breathe<br />
+Out of the silence, the Roaring Lion<br />
+Declared the grave has no claim on me<br />
+Jesus, Yours is the victory!</p>
+<p>Hallelujah, praise the One who set me free<br />
+Hallelujah, death has lost its grip on me<br />
+You have broken every chain<br />
+There's salvation in Your name<br />
+Jesus Christ, my living hope</p>
+            </div>
+        </div>
+        <div class="footer deemphasized">
+            
+        </div>
+        
+        </div>
+
+        <script>
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('themeToggleBtn').textContent = '☀️';
+            }
+            function toggleTheme() {
+                darkMode = !darkMode;
+                document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+                localStorage.setItem('darkMode', darkMode);
+                document.getElementById('themeToggleBtn').textContent = darkMode ? '☀️' : '🌙';
+            }
+            
+            // Mobile menu toggle
+            function toggleMenu() {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('open-nav');
+            }
+        </script>
+    </body>
+    </html>
+    
